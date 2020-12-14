@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Span, Text, Box, Icon, Image, Button } from "@quarkly/widgets";
+import { Theme, Link, Span, Text, Box, Icon, Button, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Menu, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
@@ -275,7 +275,7 @@ export default (() => {
 			top="-200px"
 		>
 			<Box>
-				<Text font="--logo" color="#fafafa">
+				<Text font="--logo" color="#fafafa" padding="30px 0px 0px 0px">
 					Удаленное создание контента для продукции брендов.
 					<br />
 					Вы экономите на локации и модели, не тратите время на организацию съемки и получаете{" "}
@@ -283,48 +283,94 @@ export default (() => {
 					готовый фото / видео контент для вашего бренда.{"\n\n"}
 				</Text>
 			</Box>
-			<Box display="flex" margin="40px 0 20px 0" justify-content="space-around" sm-flex-direction="column">
-				<Box padding="10px" width="80%">
-					<Components.Video color="#ffffff" />
-					<Image
-						src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/preview.png?v=2020-12-02T19:20:32.694Z"
-						width="100%"
-						max-width="100%"
-						text-align="center"
-						padding="0px 20px 0px 0px"
-					/>
-					<Text
-						text-align="left"
-						width="80%"
-						display="block"
-						font="normal 400 20px --fontFamily-googleRoboto"
-						color="#fafafa"
-					>
-						Рекламный ролик для Aarunya Nature Resort
-						<br />
-						Локация: Шри-Ланка
-						<br />
-						Бюджет: $1900{"\n\n"}
-					</Text>
+			<Stack>
+				{"    "}
+				<Box
+					display="flex"
+					margin="40px 0 20px 0"
+					justify-content="space-around"
+					sm-flex-direction="column"
+					width="100%"
+				>
+					<Box padding="10px" width="80%">
+						<Components.BrasletiVideo />
+						<Text
+							text-align="left"
+							width="80%"
+							display="block"
+							font="normal 400 20px --fontFamily-googleRoboto"
+							color="#fafafa"
+						>
+							Рекламный ролик для Aarunya Nature Resort
+							<br />
+							Локация: Шри-Ланка
+							<br />
+							Бюджет: $1900{"\n\n"}
+						</Text>
+					</Box>
+					<Box padding="10px" width="80%">
+						<Components.ZavodVideo />
+						<Text
+							text-align="left"
+							width="80%"
+							display="block"
+							font="normal 400 20px --fontFamily-googleRoboto"
+							color="#fafafa"
+						>
+							Рекламный ролик для Aarunya Nature Resort
+							<br />
+							Локация: Шри-Ланка
+							<br />
+							Бюджет: $1900{"\n\n"}
+						</Text>
+					</Box>
 				</Box>
-				<Box padding="10px" width="80%">
-					<Image src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/preview.png?v=2020-12-02T19:20:32.694Z" width="100%" max-width="100%" padding="0px 0px 0px 20px" />
-					<Text
-						text-align="left"
-						width="80%"
-						display="block"
-						font="normal 400 20px --fontFamily-googleRoboto"
-						padding="0px 0px 0px 20px"
-						color="#fafafa"
-					>
-						Рекламный ролик для Aarunya Nature Resort
-						<br />
-						Локация: Шри-Ланка
-						<br />
-						Бюджет: $1900{"\n\n"}
-					</Text>
+				{"    "}
+			</Stack>
+			<Stack>
+				{"    "}
+				<Box
+					display="flex"
+					margin="40px 0 20px 0"
+					justify-content="space-around"
+					sm-flex-direction="column"
+					width="100%"
+				>
+					<Box padding="10px" width="80%">
+						<Components.ArctikaVideo />
+						<Text
+							text-align="left"
+							width="80%"
+							display="block"
+							font="normal 400 20px --fontFamily-googleRoboto"
+							color="#fafafa"
+						>
+							Рекламный ролик для Aarunya Nature Resort
+							<br />
+							Локация: Шри-Ланка
+							<br />
+							Бюджет: $1900{"\n\n"}
+						</Text>
+					</Box>
+					<Box padding="10px" width="80%">
+						<Components.CrimeaVideo />
+						<Text
+							text-align="left"
+							width="80%"
+							display="block"
+							font="normal 400 20px --fontFamily-googleRoboto"
+							color="#fafafa"
+						>
+							Рекламный ролик для Aarunya Nature Resort
+							<br />
+							Локация: Шри-Ланка
+							<br />
+							Бюджет: $1900{"\n\n"}
+						</Text>
+					</Box>
 				</Box>
-			</Box>
+				{"    "}
+			</Stack>
 		</Section>
 		<Section
 			height="10px"
@@ -380,6 +426,7 @@ export default (() => {
 				margin="20px 0 0 0"
 				color="#fafafa"
 				text-align="center"
+				width="70%"
 			>
 				Удаленное создание контента для продукции брендов.
 				<br />
@@ -397,10 +444,11 @@ export default (() => {
 					max-width="33%"
 					margin="0 0px 0px 0px"
 					padding="0 0px 0px 0px"
-					position="static"
+					position="relative"
 					object-fit="contain"
 					max-height="40%"
 					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
+					loading="lazy"
 				/>
 				<Image
 					width="auto"
@@ -409,6 +457,7 @@ export default (() => {
 					display="inline-block"
 					max-width="33%"
 					max-height="40%"
+					position="relative"
 				/>
 				<Image
 					width="auto"
@@ -417,7 +466,7 @@ export default (() => {
 					display="inline-block"
 					max-width="33%"
 					object-fit="contain"
-					position="static"
+					position="relative"
 					max-height="40%"
 				/>
 				<Image
@@ -496,9 +545,6 @@ export default (() => {
 						форма
 					</Text>
 				</StackItem>
-				<Link href="https://player.vimeo.com/video/404273433">
-					Some text
-				</Link>
 			</Stack>
 		</Section>
 		<Section
