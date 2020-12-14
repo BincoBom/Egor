@@ -73,8 +73,7 @@ export default (() => {
 			</Box>
 		</Section>
 		<Section
-			background="linear-gradient(0deg,rgba(4, 8, 12, 0) 0%,rgba(4, 8, 12, 0.18) 0%),--color-darkL2 url(https://images.unsplash.com/photo-1541322114925-104973c4cdd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1460&q=80) 0% 0%/contain no-repeat"
-			padding="150px 0 150px 0"
+			background="linear-gradient(0deg,rgba(4, 8, 12, 0) 0%,rgba(4, 8, 12, 0.18) 0%),--color-darkL2 url(https://images.unsplash.com/photo-1541322114925-104973c4cdd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1460&q=80) 50% 0%/cover no-repeat"
 			sm-padding="40px 0"
 			color="--light"
 			font="--base"
@@ -82,24 +81,30 @@ export default (() => {
 			min-height="16px"
 			top="0px"
 			max-width="1920px"
-			margin="100px 0 0 0"
-			position="fixed"
+			position="relative"
 			z-index="1"
 			max-height="1080px"
 			bottom="0px"
 		>
 			<Override slot="SectionContent" />
-			<Stack text-align="center">
+			<Stack text-align="center" align-items="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
 					<Text
 						as="h1"
-						font="normal 600 60px/1 --fontFamily-googleRoboto"
+						font="normal 600 370%/1 --fontFamily-googleRoboto"
 						md-font="--headline2"
-						margin="10px 0 7px 0"
 						text-align="center"
 						align-self="center"
 						color="#fafafa"
+						display="flex"
+						max-height="180px"
+						max-width="758px"
+						height="20%"
+						width="100%"
+						justify-content="center"
+						position="static"
+						margin="280px 0px 16px 0px"
 					>
 						СОЗДАЮ ФОТО И ВИДЕО
 						<br />
@@ -109,7 +114,7 @@ export default (() => {
 					</Text>
 				</StackItem>
 			</Stack>
-			<Box text-align="center" margin="96px 0 0 0" color="#fafafa">
+			<Box text-align="center" color="#fafafa" padding="200px 0px 0px 0px">
 				<Link href="#" font="--logo" color="#fafafa" text-decoration-line="initial">
 					ПОДРОБНЕЕ
 				</Link>
@@ -124,7 +129,6 @@ export default (() => {
 			font="--base"
 			height="100%"
 			display="flex"
-			top="700px"
 			position="relative"
 			bottom="0px"
 			z-index="11"
@@ -152,7 +156,14 @@ export default (() => {
 						<br />
 						спорт и события.
 					</Text>
-					<StackItem align-self="center" width="100%" padding="0px 20px 0px 20px" margin="40px 50px 0px 50px">
+					<StackItem
+						align-self="center"
+						width="100%"
+						padding="0px 20px 0px 20px"
+						margin="40px 50px 0px 50px"
+						height="40%"
+						min-height="120px"
+					>
 						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
 							<Override
 								slot="StackItemContent"
@@ -160,9 +171,9 @@ export default (() => {
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/trozenko.png?v=2020-11-24T19:42:37.756Z) center/contain no-repeat"
 								padding="0px 20px 0 0px"
 								margin="0px 50px 0px 30px"
-								height="144px"
-								width="300px"
-								min-height="16px"
+								height="90%"
+								width="100%"
+								min-height="120px"
 							/>
 						</StackItem>
 						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
@@ -172,20 +183,21 @@ export default (() => {
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/man%20effxect.png?v=2020-11-24T19:42:37.753Z) center/contain no-repeat"
 								margin="0px 50px 0px 30px"
 								padding="0px 20px 0 0px"
-								width="300px"
-								height="144px"
-								min-height="16px"
+								width="100%"
+								height="90%"
+								min-height="120px"
 							/>
 						</StackItem>
 						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
 							<Override
 								slot="StackItemContent"
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/arctika.png?v=2020-11-24T19:42:37.751Z) center/contain no-repeat"
-								margin="0px 50px 0px 30px"
-								padding="0px 20px 0 0px"
-								width="300px"
-								height="144px"
-								min-height="16px"
+								width="100%"
+								height="90%"
+								min-height="120px"
+								display="flex"
+								margin="0px 0px 0px 30px"
+								padding="0px 50px 0px 20px"
 							/>
 						</StackItem>
 					</StackItem>
@@ -202,9 +214,9 @@ export default (() => {
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/sterlic.png?v=2020-11-24T19:42:37.750Z) center/contain no-repeat"
 								margin="20px 50px 0px 30px"
 								padding="20px 20px 0 0px"
-								width="300px"
-								height="144px"
-								min-height="16px"
+								width="100%"
+								height="90%"
+								min-height="120px"
 							/>
 						</StackItem>
 						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
@@ -213,15 +225,15 @@ export default (() => {
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/antre.png?v=2020-11-24T19:42:37.752Z) center/contain no-repeat"
 								margin="5px 50px 0px 30px"
 								padding="0px 20px 0 0px"
-								width="300px"
-								height="144px"
-								min-height="16px"
+								width="100%"
+								height="90%"
+								min-height="120px"
 							/>
 						</StackItem>
 					</StackItem>
+					<Box padding="0px 0px 50px 0px" />
 				</StackItem>
 			</Stack>
-			<Box padding="0px 0px 50px 0px" />
 		</Section>
 		<Section
 			height="10px"
@@ -230,16 +242,14 @@ export default (() => {
 			min-height="10px"
 			position="relative"
 			z-index="13"
-			top="700px"
 		/>
 		<Section
 			height="150px"
 			width="100%"
 			position="relative"
 			z-index="14"
-			background="rgba(0, 0, 0, 0)"
-			top="700px"
 			quarkly-title="подложка"
+			bottom={0}
 		>
 			<Override slot="SectionContent" align-self="center" />
 			<Text font="--headline1" color="#fafafa" text-align="center" align-self="center">
@@ -249,20 +259,20 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/2zR6OqAocjA.jpg?v=2020-11-24T18:48:33.569Z) 50% 50%/100% fixed border-box"
-			position="relative"
-			top="500px"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1602526429747-ac387a91d43b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 50%/100% fixed border-box"
 			z-index="2"
 			quarkly-title="фон"
+			position="relative"
+			top="-200px"
 		/>
 		<Section
 			text-align="center"
 			sm-padding="40px 0"
 			position="relative"
-			top="500px"
 			background="#171717"
 			padding="0px 0 24px 0"
 			z-index="15"
+			top="-200px"
 		>
 			<Box>
 				<Text font="--logo" color="#fafafa">
@@ -298,9 +308,6 @@ export default (() => {
 					</Text>
 				</Box>
 				<Box padding="10px" width="80%">
-					<Link href="https://vimeo.com/404273433">
-						Some text
-					</Link>
 					<Image src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/preview.png?v=2020-12-02T19:20:32.694Z" width="100%" max-width="100%" padding="0px 0px 0px 20px" />
 					<Text
 						text-align="left"
@@ -326,7 +333,7 @@ export default (() => {
 			min-height="10px"
 			position="relative"
 			z-index="16"
-			top="500px"
+			top="-200px"
 		/>
 		<Section
 			height="150px"
@@ -334,8 +341,8 @@ export default (() => {
 			position="relative"
 			z-index="17"
 			background="rgba(0, 0, 0, 0)"
-			top="500px"
 			quarkly-title="подложка"
+			top="-200px"
 		>
 			<Override slot="SectionContent" align-self="center" />
 		</Section>
@@ -344,17 +351,17 @@ export default (() => {
 			width="100%"
 			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1606838975183-abef02eea03e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 20%/100% fixed border-box"
 			position="relative"
-			top="300px"
 			z-index="2"
 			quarkly-title="фон"
+			top="-400px"
 		/>
 		<Section
 			padding="100px 0"
 			sm-padding="40px 0"
 			position="relative"
-			top="300px"
 			background="#171717"
 			z-index="18"
+			top="-400px"
 		>
 			<Override slot="SectionContent" align-items="center" />
 			<Text
@@ -393,6 +400,7 @@ export default (() => {
 					position="static"
 					object-fit="contain"
 					max-height="40%"
+					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
 				/>
 				<Image
 					width="auto"
@@ -449,8 +457,8 @@ export default (() => {
 			color="--dark"
 			padding="64px 0 64px 0"
 			position="relative"
-			top="300px"
 			z-index="19"
+			top="-400px"
 		>
 			<Stack>
 				<StackItem width="50%" lg-width="100%">
@@ -488,6 +496,9 @@ export default (() => {
 						форма
 					</Text>
 				</StackItem>
+				<Link href="https://player.vimeo.com/video/404273433">
+					Some text
+				</Link>
 			</Stack>
 		</Section>
 		<Section
@@ -495,8 +506,8 @@ export default (() => {
 			padding="10px 0 10px 0"
 			sm-padding="40px 0"
 			position="relative"
-			top="300px"
 			z-index="19"
+			top="-400px"
 		>
 			<SocialMedia
 				facebook="https://www.facebook.com/quarklyapp/"
@@ -516,10 +527,6 @@ export default (() => {
 				/>
 			</SocialMedia>
 		</Section>
-		<Link href="#">
-			Some text
-		</Link>
-		<Image width="64px" height="64px" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

@@ -2,28 +2,18 @@ import React, { useRef, useLayoutEffect } from "react";
 import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = <div>
+	<video>
+		 
+		<source src="https://www.youtube.com/embed/Nw9VueOQmHg" />
+	</video>
 	<iframe
-		src="https://player.vimeo.com/video/404273433"
-		width="640"
-		height="360"
+		width="560"
+		height="315"
+		src="https://www.youtube.com/embed/Nw9VueOQmHg"
 		frameborder="0"
-		allow="autoplay; fullscreen"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 		allowfullscreen
 	></iframe>
-	<p>
-		<a href="https://vimeo.com/404273433">
-			Men's Effect Accessories | МУЖСКИЕ БРАСЛЕТЫ
-		</a>
-		 from 
-		<a href="https://vimeo.com/vlasovprod">
-			VLASOV PRODUCTION
-		</a>
-		 on 
-		<a href="https://vimeo.com">
-			Vimeo
-		</a>
-		.
-	</p>
 </div>;
 
 const EmbedHTML = ({
