@@ -3,6 +3,7 @@ import theme from "theme";
 import { Theme, Link, Span, Text, Box, Icon, Image, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Menu, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import * as Components from "components";
 import { MdArrowDownward } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
@@ -109,7 +110,7 @@ export default (() => {
 				</StackItem>
 			</Stack>
 			<Box text-align="center" margin="96px 0 0 0" color="#fafafa">
-				<Link href="#2slide" font="--logo" color="#fafafa" text-decoration-line="initial">
+				<Link href="#" font="--logo" color="#fafafa" text-decoration-line="initial">
 					ПОДРОБНЕЕ
 				</Link>
 				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
@@ -129,11 +130,7 @@ export default (() => {
 			z-index="11"
 			max-height="1080px"
 			max-width="1920px"
-			lazy-load
 		>
-			<Link href="#2slide" target="_self">
-				Some text
-			</Link>
 			<Stack text-align="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -278,6 +275,7 @@ export default (() => {
 			</Box>
 			<Box display="flex" margin="40px 0 20px 0" justify-content="space-around" sm-flex-direction="column">
 				<Box padding="10px" width="80%">
+					<Components.Video color="#ffffff" />
 					<Image
 						src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/preview.png?v=2020-12-02T19:20:32.694Z"
 						width="100%"
@@ -300,6 +298,9 @@ export default (() => {
 					</Text>
 				</Box>
 				<Box padding="10px" width="80%">
+					<Link href="https://vimeo.com/404273433">
+						Some text
+					</Link>
 					<Image src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/preview.png?v=2020-12-02T19:20:32.694Z" width="100%" max-width="100%" padding="0px 0px 0px 20px" />
 					<Text
 						text-align="left"
@@ -518,6 +519,7 @@ export default (() => {
 		<Link href="#">
 			Some text
 		</Link>
+		<Image width="64px" height="64px" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
