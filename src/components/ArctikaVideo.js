@@ -3,7 +3,8 @@ import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = `
 <div>
-<iframe src="https://player.vimeo.com/video/390741579?color=ff9933&byline=0" width="100%" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w2WQHC3CeN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div?`;
 
 const ArctikaVideo = ({
 	children,

@@ -122,7 +122,7 @@ export default (() => {
 			</Box>
 		</Section>
 		<Section
-			background="linear-gradient(0deg,rgba(4, 8, 12, 0.37) 0%,rgba(4, 8, 12, 0.6) 100%),--color-darkL2 url(https://images.unsplash.com/photo-1604179993497-d069e1ba88f5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jean-carlo-emer-I2vzEJRaMhA-unsplash.jpg) 20% 50%/cover no-repeat"
+			background="linear-gradient(0deg,rgba(4, 8, 12, 0.37) 0%,rgba(0, 0, 0, 0.6) 21%),--color-darkL2 url(https://images.unsplash.com/photo-1535652316575-b38ecbf16de3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 20% 50%/cover no-repeat"
 			padding="64px 0"
 			sm-padding="40px 0"
 			color="--light"
@@ -236,7 +236,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section
-			height="10px"
+			height="30px"
 			width="100%"
 			background="#171717"
 			min-height="10px"
@@ -275,7 +275,7 @@ export default (() => {
 			top="-200px"
 		>
 			<Box>
-				<Text font="--logo" color="#fafafa" padding="30px 0px 0px 0px">
+				<Text font="--lead" color="#fafafa" padding="30px 0px 0px 0px">
 					Удаленное создание контента для продукции брендов.
 					<br />
 					Вы экономите на локации и модели, не тратите время на организацию съемки и получаете{" "}
@@ -283,92 +283,16 @@ export default (() => {
 					готовый фото / видео контент для вашего бренда.{"\n\n"}
 				</Text>
 			</Box>
-			<Stack>
+			<Stack width="100%" margin="40px 0 20px 0" justify-content="safe center">
 				{"    "}
-				<Box
-					display="flex"
-					margin="40px 0 20px 0"
-					justify-content="space-around"
-					sm-flex-direction="column"
-					width="100%"
-				>
-					<Box padding="10px" width="80%">
-						<Components.BrasletiVideo />
-						<Text
-							text-align="left"
-							width="80%"
-							display="block"
-							font="normal 400 20px --fontFamily-googleRoboto"
-							color="#fafafa"
-						>
-							Рекламный ролик для Aarunya Nature Resort
-							<br />
-							Локация: Шри-Ланка
-							<br />
-							Бюджет: $1900{"\n\n"}
-						</Text>
-					</Box>
-					<Box padding="10px" width="80%">
-						<Components.ZavodVideo />
-						<Text
-							text-align="left"
-							width="80%"
-							display="block"
-							font="normal 400 20px --fontFamily-googleRoboto"
-							color="#fafafa"
-						>
-							Рекламный ролик для Aarunya Nature Resort
-							<br />
-							Локация: Шри-Ланка
-							<br />
-							Бюджет: $1900{"\n\n"}
-						</Text>
-					</Box>
-				</Box>
+				<Components.BrasletiVideo width="45%" padding="0px 20px 0px 0px" />
+				<Components.ZavodVideo width="45%" lg-width="100%" padding="0px 0px 0px 20px" />
 				{"    "}
 			</Stack>
-			<Stack>
+			<Stack width="100%" margin="10px 0 20px 0" justify-content="safe center">
 				{"    "}
-				<Box
-					display="flex"
-					margin="40px 0 20px 0"
-					justify-content="space-around"
-					sm-flex-direction="column"
-					width="100%"
-				>
-					<Box padding="10px" width="80%">
-						<Components.ArctikaVideo />
-						<Text
-							text-align="left"
-							width="80%"
-							display="block"
-							font="normal 400 20px --fontFamily-googleRoboto"
-							color="#fafafa"
-						>
-							Рекламный ролик для Aarunya Nature Resort
-							<br />
-							Локация: Шри-Ланка
-							<br />
-							Бюджет: $1900{"\n\n"}
-						</Text>
-					</Box>
-					<Box padding="10px" width="80%">
-						<Components.CrimeaVideo />
-						<Text
-							text-align="left"
-							width="80%"
-							display="block"
-							font="normal 400 20px --fontFamily-googleRoboto"
-							color="#fafafa"
-						>
-							Рекламный ролик для Aarunya Nature Resort
-							<br />
-							Локация: Шри-Ланка
-							<br />
-							Бюджет: $1900{"\n\n"}
-						</Text>
-					</Box>
-				</Box>
+				<Components.AntreVideo />
+				<Components.ArctikaVideo />
 				{"    "}
 			</Stack>
 		</Section>
@@ -395,7 +319,7 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1606838975183-abef02eea03e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 20%/100% fixed border-box"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1546443046-ed1ce6ffd1ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 0%/contain fixed border-box"
 			position="relative"
 			z-index="2"
 			quarkly-title="фон"

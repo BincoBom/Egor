@@ -3,8 +3,8 @@ import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = `
 <div>
-<iframe src="https://player.vimeo.com/video/404273433?color=ff9933&byline=0" width="100%" height="300px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-`;
+<iframe width="100%" height="212vw" src="https://www.youtube.com/embed/ThRwbW31R1A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>`;
 
 const EmbedHTML = ({
 	children,
