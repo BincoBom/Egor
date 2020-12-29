@@ -2,9 +2,10 @@ import React, { useRef, useLayoutEffect } from "react";
 import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = `
-<div>
-<iframe src="https://player.vimeo.com/video/385031665?color=ff9933&byline=0" width="100%" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-`;
+<div style="padding:55.19% 0 0 0;position:relative;">
+<iframe src="https://www.youtube.com/embed/aOMfKujpoFg" 
+style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe></div>`;
 
 const CrimeaVideo = ({
 	children,

@@ -86,7 +86,6 @@ export default (() => {
 			max-height="1080px"
 			bottom="0px"
 		>
-			<Override slot="SectionContent" />
 			<Stack text-align="center" align-items="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -108,7 +107,7 @@ export default (() => {
 					>
 						СОЗДАЮ ФОТО И ВИДЕО
 						<br />
-						{"\n "}КОНТЕНТ ДЛЯ БРЕНДОВ И
+						{" "}КОНТЕНТ ДЛЯ БРЕНДОВ И
 						<br />
 						ЛЮДЕЙ ПО ВСЕМУ МИРУ
 					</Text>
@@ -259,7 +258,7 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1602526429747-ac387a91d43b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 50%/100% fixed border-box"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1602526429747-ac387a91d43b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 75%/100% fixed border-box"
 			z-index="2"
 			quarkly-title="фон"
 			position="relative"
@@ -280,19 +279,79 @@ export default (() => {
 					<br />
 					Вы экономите на локации и модели, не тратите время на организацию съемки и получаете{" "}
 					<br />
-					готовый фото / видео контент для вашего бренда.{"\n\n"}
+					готовый фото / видео контент для вашего бренда.
 				</Text>
 			</Box>
 			<Stack width="100%" margin="40px 0 20px 0" justify-content="safe center">
 				{"    "}
-				<Components.BrasletiVideo width="45%" padding="0px 20px 0px 0px" />
-				<Components.ZavodVideo width="45%" lg-width="100%" padding="0px 0px 0px 20px" />
+				<Box
+					width="48%"
+					height="100%"
+					min-height="100px"
+					max-height="350px"
+					padding="0px 10px 0px 0px"
+				>
+					<Components.BrasletiVideo width="100%" height="100%" max-height="340px" sm-min-height="60px" />
+				</Box>
+				<Box
+					width="48%"
+					height="100%"
+					min-height="100px"
+					max-height="350px"
+					padding="0px 0px 0px 10px"
+				>
+					<Components.ZavodVideo
+						width="100%"
+						lg-width="100%"
+						height="100%"
+						max-height="340px"
+						margin="0px 0px 0px 0px"
+					/>
+				</Box>
 				{"    "}
 			</Stack>
-			<Stack width="100%" margin="10px 0 20px 0" justify-content="safe center">
+			<Stack width="100%" margin="40px 0 20px 0" justify-content="safe center">
 				{"    "}
-				<Components.AntreVideo />
-				<Components.ArctikaVideo />
+				<Box
+					width="48%"
+					height="100%"
+					min-height="100px"
+					max-height="350px"
+					padding="0px 10px 0px 0px"
+				>
+					<Components.ArctikaVideo />
+				</Box>
+				<Box
+					width="48%"
+					height="100%"
+					min-height="100px"
+					max-height="350px"
+					padding="0px 0px 0px 10px"
+				>
+					<Components.AntreVideo />
+				</Box>
+				{"    "}
+			</Stack>
+			<Stack width="100%" margin="40px 0 20px 0" justify-content="safe center">
+				{"    "}
+				<Box
+					width="48%"
+					height="100%"
+					min-height="100px"
+					max-height="350px"
+					padding="0px 10px 0px 0px"
+				>
+					<Components.MasterVideo />
+				</Box>
+				<Box
+					width="48%"
+					height="100%"
+					min-height="100px"
+					max-height="350px"
+					padding="0px 0px 0px 10px"
+				>
+					<Components.CrimeaVideo />
+				</Box>
 				{"    "}
 			</Stack>
 		</Section>
@@ -319,11 +378,12 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1546443046-ed1ce6ffd1ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 0%/contain fixed border-box"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1546443046-ed1ce6ffd1ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 70%/contain fixed border-box"
 			position="relative"
 			z-index="2"
 			quarkly-title="фон"
 			top="-400px"
+			padding="23px 0 24px 0"
 		/>
 		<Section
 			padding="100px 0"
@@ -332,6 +392,9 @@ export default (() => {
 			background="#171717"
 			z-index="18"
 			top="-400px"
+			bottom="0px"
+			height="auto"
+			display="inline-block"
 		>
 			<Override slot="SectionContent" align-items="center" />
 			<Text
@@ -354,84 +417,90 @@ export default (() => {
 			>
 				Удаленное создание контента для продукции брендов.
 				<br />
-				Вы экономите на локации и модели, не тратите время на организацию съемки и получаете готовый фото / видео контент для вашего бренда.{"\n\n"}
+				Вы экономите на локации и модели, не тратите время на организацию съемки и получаете готовый фото / видео контент для вашего бренда.
 			</Text>
 			<Button font="normal 500 20px/1.5 --fontFamily-sans" margin="20px" color="#171717" background="fafafa">
 				Начнем!
 			</Button>
-			<Box width="100%" height="100%" max-height="1080px">
+			<Box
+				width="100%"
+				height="100%"
+				text-align="center"
+				display="inline-block"
+				position="relative"
+			>
 				<Image
-					width="auto"
+					width="24%"
 					height="auto"
-					src="https://images.unsplash.com/photo-1606825488928-7611d6042990?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000"
+					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/333.jpg?v=2020-12-29T21:02:36.217Z"
 					display="inline-block"
-					max-width="33%"
 					margin="0 0px 0px 0px"
-					padding="0 0px 0px 0px"
-					position="relative"
 					object-fit="contain"
-					max-height="40%"
 					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
 					loading="lazy"
+					vertical-align="top"
+					position="absolute"
+					bottom="0px"
+					left="135px"
+					right="auto"
+					top="0px"
 				/>
 				<Image
-					width="auto"
-					height="auto"
-					src="https://images.unsplash.com/photo-1606838977034-c63af9f4f026?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
+					width="24%"
+					height="421.578px"
+					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/4444.jpg?v=2020-12-29T21:02:33.567Z"
 					display="inline-block"
-					max-width="33%"
-					max-height="40%"
-					position="relative"
-				/>
-				<Image
-					width="auto"
-					height="auto"
-					src="https://images.unsplash.com/photo-1606846883685-68d1e88c3e98?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000"
-					display="inline-block"
-					max-width="33%"
 					object-fit="contain"
-					position="relative"
-					max-height="40%"
+					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
+					loading="lazy"
+					vertical-align="top"
+					position="absolute"
+					bottom="-806px"
+					left="auto"
+					right="135px"
+					top="auto"
 				/>
 				<Image
-					width="auto"
-					height="auto"
-					src="https://images.unsplash.com/photo-1606846883685-68d1e88c3e98?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000"
+					width="24%"
+					height="385.516px"
+					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/122.jpg?v=2020-12-29T21:02:33.574Z"
 					display="inline-block"
 					max-width="33%"
-					object-fit="contain"
-					position="static"
-					max-height="40%"
+					vertical-align="top"
+					position="absolute"
+					bottom="auto"
+					left="auto"
+					right="135px"
+					top="0px"
 				/>
 				<Image
-					width="auto"
-					height="auto"
-					src="https://images.unsplash.com/photo-1606838977034-c63af9f4f026?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
-					display="inline-block"
-					max-width="33%"
-					max-height="40%"
-				/>
-				<Image
-					width="auto"
-					height="auto"
-					src="https://images.unsplash.com/photo-1606825488928-7611d6042990?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000"
-					display="inline-block"
-					max-width="33%"
+					width="24%"
+					height="421.578px"
+					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/4444.jpg?v=2020-12-29T21:02:33.567Z"
 					margin="0 0px 0px 0px"
-					padding="0 0px 0px 0px"
-					position="static"
 					object-fit="contain"
-					max-height="40%"
+					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
+					loading="lazy"
+					flex-direction="row"
+					vertical-align="top"
+					display="inline-block"
+					text-align="center"
+					position="absolute"
+					bottom="auto"
+					left="auto"
+					right="407px"
+					top="0px"
 				/>
 			</Box>
+			<Box />
 		</Section>
 		<Section
 			background="#171717"
 			color="--dark"
 			padding="64px 0 64px 0"
-			position="relative"
+			position="static"
 			z-index="19"
-			top="-400px"
+			top="-100px"
 		>
 			<Stack>
 				<StackItem width="50%" lg-width="100%">
@@ -456,7 +525,7 @@ export default (() => {
 						<br />
 						идей,
 						<br />
-						{"\n"}коллабов,
+						коллабов,
 						<br />
 						предложений
 						<br />
@@ -475,7 +544,7 @@ export default (() => {
 			background="#171717"
 			padding="10px 0 10px 0"
 			sm-padding="40px 0"
-			position="relative"
+			position="static"
 			z-index="19"
 			top="-400px"
 		>
