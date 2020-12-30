@@ -522,6 +522,7 @@ export default (() => {
 					height="auto"
 					bottom="1689px"
 					left="13%"
+					z-index="19"
 				/>
 				<Image
 					width="24%"
