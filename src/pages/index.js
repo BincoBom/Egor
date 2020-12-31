@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Span, Text, Box, Icon, Button, Image } from "@quarkly/widgets";
+import { Theme, Link, Span, Text, Box, Icon, Hr, Button, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Menu, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
@@ -31,16 +31,19 @@ export default (() => {
 				justify-content="space-between"
 				align-items="center"
 				flex-direction="row"
-				md-flex-direction="column"
 				color="#fafafa"
 				position="inherit"
 			>
 				<Text
 					margin="0"
-					md-margin="0px 0 20px 0"
+					md-margin="0px 0 0px 0"
 					text-align="center"
 					font="--logo2"
 					color="#fafafa"
+					lg-display="block"
+					md-text-align="left"
+					sm-font="normal small-caps 400 12px/1.3 Roboto, sans-serif"
+					sm-text-align="center"
 				>
 					<Span
 						font="--logo"
@@ -52,6 +55,9 @@ export default (() => {
 						text-indent="0"
 						text-overflow="clip"
 						hyphens="manual"
+						data-q-widget-type="PRIMITIVE"
+						sm-font="normal 400 21px Roboto, sans-serif"
+						sm-text-align="center"
 					>
 						VLASOV
 						<br />
@@ -63,18 +69,17 @@ export default (() => {
 					justify-content="center"
 					font="--base"
 					font-weight="700"
-					md-flex-direction="column"
-					md-align-items="center"
+					sm-width="50%"
+					md-text-align="right"
 				>
 					<Override slot="link" text-decoration="none" color="#fafafa" padding="6px 12px" />
 					<Override slot="link-active" color="--primary" />
-					<Override slot="item" padding="6px" />
+					<Override slot="item" padding="6px" md-text-align="right" />
 				</Menu>
 			</Box>
 		</Section>
 		<Section
 			background="linear-gradient(0deg,rgba(4, 8, 12, 0) 0%,rgba(4, 8, 12, 0.18) 0%),--color-darkL2 url(https://images.unsplash.com/photo-1541322114925-104973c4cdd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1460&q=80) 50% 0%/cover no-repeat"
-			sm-padding="40px 0"
 			color="--light"
 			font="--base"
 			height="100%"
@@ -87,12 +92,12 @@ export default (() => {
 			bottom="0px"
 		>
 			<Stack text-align="center" align-items="center">
-				<StackItem width="100%" lg-width="100%" align-self="center">
+				<StackItem width="100%" lg-width="100%" align-self="center" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" />
 					<Text
 						as="h1"
 						font="normal 600 370%/1 --fontFamily-googleRoboto"
-						md-font="--headline2"
+						md-font="normal 600 38px/1 --fontFamily-googleRoboto"
 						text-align="center"
 						align-self="center"
 						color="#fafafa"
@@ -104,6 +109,8 @@ export default (() => {
 						justify-content="center"
 						position="static"
 						margin="280px 0px 16px 0px"
+						lg-font="normal 600 48px/1 --fontFamily-googleRoboto"
+						sm-font="normal 600 26px/1 --fontFamily-googleRoboto"
 					>
 						СОЗДАЮ ФОТО И ВИДЕО
 						<br />
@@ -114,7 +121,13 @@ export default (() => {
 				</StackItem>
 			</Stack>
 			<Box text-align="center" color="#fafafa" padding="200px 0px 0px 0px">
-				<Link href="#" font="--logo" color="#fafafa" text-decoration-line="initial">
+				<Link
+					href="#"
+					font="--logo"
+					color="#fafafa"
+					text-decoration-line="initial"
+					sm-font="normal 400 16px Roboto, sans-serif"
+				>
 					ПОДРОБНЕЕ
 				</Link>
 				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
@@ -140,15 +153,16 @@ export default (() => {
 					<Text
 						as="h1"
 						font="normal 600 40px/1 --fontFamily-googleRoboto"
-						md-font="--headline2"
+						md-font="normal 600 38px/1 --fontFamily-googleRoboto"
 						margin="20px 0 7px 0"
 						text-align="center"
 						align-self="center"
 						color="#fafafa"
+						sm-font="normal 600 20px/1 --fontFamily-googleRoboto"
 					>
 						Режиссёр | Оператор | Фотограф
 					</Text>
-					<Text font="normal 400 20px/1.5 --fontFamily-googleRoboto" padding="40px 0px 0px 0px" margin="0 0px 16px 0px">
+					<Text font="normal 300 20px/1.5 --fontFamily-sans" padding="40px 0px 0px 0px" margin="0 0px 16px 0px" sm-font="normal 400 14px/1.5 --fontFamily-googleRoboto">
 						Я предлагаю создание контента по всему миру.
 						<br />
 						{"  "}Реклама, промо видео, лайфстайл и экстрим,
@@ -158,36 +172,48 @@ export default (() => {
 					<StackItem
 						align-self="center"
 						width="100%"
-						padding="0px 20px 0px 20px"
-						margin="40px 50px 0px 50px"
+						padding="0px 0px 0px 0px"
+						margin="40px 0px 0px 0px"
 						height="40%"
 						min-height="120px"
+						md-display="flex"
+						md-align-items="center"
 					>
-						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
+						<StackItem
+							width="50%"
+							lg-width="33.3%"
+							md-width="33%"
+							sm-width="100%"
+							lg-margin="0px 20px 0px 0px"
+						>
 							<Override
 								slot="StackItemContent"
 								padding-bottom="100%"
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/trozenko.png?v=2020-11-24T19:42:37.756Z) center/contain no-repeat"
-								padding="0px 20px 0 0px"
-								margin="0px 50px 0px 30px"
 								height="90%"
 								width="100%"
 								min-height="120px"
+								padding="0px 20px 0 0px"
 							/>
 						</StackItem>
-						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
+						<StackItem width="50%" lg-width="33.3%" md-width="33%" sm-width="100%">
 							<Override
 								slot="StackItemContent"
 								padding-bottom="100%"
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/man%20effxect.png?v=2020-11-24T19:42:37.753Z) center/contain no-repeat"
-								margin="0px 50px 0px 30px"
 								padding="0px 20px 0 0px"
 								width="100%"
 								height="90%"
 								min-height="120px"
 							/>
 						</StackItem>
-						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
+						<StackItem
+							width="50%"
+							lg-width="33.3%"
+							md-width="33%"
+							sm-width="100%"
+							lg-margin="0px 0px 0px 20px"
+						>
 							<Override
 								slot="StackItemContent"
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/arctika.png?v=2020-11-24T19:42:37.751Z) center/contain no-repeat"
@@ -195,7 +221,6 @@ export default (() => {
 								height="90%"
 								min-height="120px"
 								display="flex"
-								margin="0px 0px 0px 30px"
 								padding="0px 50px 0px 20px"
 							/>
 						</StackItem>
@@ -206,27 +231,30 @@ export default (() => {
 						height="100px"
 						margin="0px 0px 0px 0px"
 						padding="0px 0px 0px 0px"
+						md-display="flex"
 					>
-						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
+						<StackItem width="50%" md-width="50%" sm-width="100%">
 							<Override
 								slot="StackItemContent"
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/sterlic.png?v=2020-11-24T19:42:37.750Z) center/contain no-repeat"
-								margin="20px 50px 0px 30px"
-								padding="20px 20px 0 0px"
-								width="100%"
-								height="90%"
-								min-height="120px"
-							/>
-						</StackItem>
-						<StackItem width="50%" lg-width="33.3%" md-width="50%" sm-width="100%">
-							<Override
-								slot="StackItemContent"
-								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/antre.png?v=2020-11-24T19:42:37.752Z) center/contain no-repeat"
-								margin="5px 50px 0px 30px"
 								padding="0px 20px 0 0px"
 								width="100%"
 								height="90%"
 								min-height="120px"
+								margin="20px 0px 0px 0px"
+								sm-margin="5px 0px 0px 0px"
+							/>
+						</StackItem>
+						<StackItem width="50%" md-width="50%" sm-width="100%">
+							<Override
+								slot="StackItemContent"
+								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/antre.png?v=2020-11-24T19:42:37.752Z) center/contain no-repeat"
+								padding="0px 20px 0 0px"
+								width="100%"
+								height="90%"
+								min-height="120px"
+								margin="5px 0px 0px 0px"
+								sm-margin="0 0px 0px 0px"
 							/>
 						</StackItem>
 					</StackItem>
@@ -274,7 +302,7 @@ export default (() => {
 			top="-200px"
 		>
 			<Box>
-				<Text font="--lead" color="#fafafa" padding="30px 0px 0px 0px">
+				<Text font="--lead" color="#fafafa" padding="30px 0px 0px 0px" sm-font="normal 300 17px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif">
 					Удаленное создание контента для продукции брендов.
 					<br />
 					Вы экономите на локации и модели, не тратите время на организацию съемки и получаете{" "}
@@ -290,8 +318,9 @@ export default (() => {
 					min-height="100px"
 					max-height="350px"
 					padding="0px 10px 0px 0px"
+					sm-padding="0px 0 0px 0px"
 				>
-					<Components.BrasletiVideo width="100%" height="100%" max-height="340px" sm-min-height="60px" />
+					<Components.BrasletiVideo width="100%" height="100%" max-height="340px" />
 				</Box>
 				<Box
 					width="48%"
@@ -310,7 +339,7 @@ export default (() => {
 				</Box>
 				{"    "}
 			</Stack>
-			<Stack width="100%" margin="40px 0 20px 0" justify-content="safe center">
+			<Stack width="100%" margin="40px 0 20px 0" justify-content="safe center" sm-margin="20px 0 20px 0">
 				{"    "}
 				<Box
 					width="48%"
@@ -318,6 +347,7 @@ export default (() => {
 					min-height="100px"
 					max-height="350px"
 					padding="0px 10px 0px 0px"
+					sm-padding="0px 0 0px 0px"
 				>
 					<Components.ArctikaVideo />
 				</Box>
@@ -332,7 +362,7 @@ export default (() => {
 				</Box>
 				{"    "}
 			</Stack>
-			<Stack width="100%" margin="40px 0 20px 0" justify-content="safe center">
+			<Stack width="100%" margin="40px 0 20px 0" justify-content="safe center" sm-margin="20px 0 20px 0">
 				{"    "}
 				<Box
 					width="48%"
@@ -340,6 +370,7 @@ export default (() => {
 					min-height="100px"
 					max-height="350px"
 					padding="0px 10px 0px 0px"
+					sm-padding="0px 0 0px 0px"
 				>
 					<Components.MasterVideo />
 				</Box>
@@ -356,15 +387,6 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section
-			height="10px"
-			width="100%"
-			background="#171717"
-			min-height="10px"
-			position="relative"
-			z-index="16"
-			top="-200px"
-		/>
-		<Section
 			height="150px"
 			width="100%"
 			position="relative"
@@ -378,47 +400,146 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1546443046-ed1ce6ffd1ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 70%/contain fixed border-box"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1546443046-ed1ce6ffd1ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 50%/contain fixed border-box"
 			position="relative"
 			z-index="2"
 			quarkly-title="фон"
 			top="-400px"
-			padding="23px 0 24px 0"
+			padding="23px 0 23px 0"
 		/>
 		<Section
-			padding="100px 0 0px 0"
+			padding="40px 0 0px 0"
 			sm-padding="40px 0"
 			position="relative"
 			background="#171717"
 			z-index="18"
 			top="-400px"
 			bottom="0px"
-			height="auto"
 			display="inline-table"
-			min-height="2000px"
+			width="100%"
 		>
 			<Override slot="SectionContent" align-items="center" />
 			<Text
-				as="h2"
-				font="--headline1"
-				md-font="--headline2"
-				margin="20px 0 0 0"
+				as="h1"
+				font="normal 600 40px/1 --fontFamily-googleRoboto"
+				md-font="normal 600 38px/1 --fontFamily-googleRoboto"
+				margin="0px 0 20px 0"
+				text-align="center"
+				align-self="center"
 				color="#fafafa"
-				display="flex"
+				sm-font="normal 600 20px/1 --fontFamily-googleRoboto"
 			>
-				Удаленное создание контента{" "}
+				Тарифы
+			</Text>
+			<Text
+				as="p"
+				font="normal 400 32px/1.5 --fontFamily-googleRoboto"
+				margin="0px 0 0 0"
+				color="#fafafa"
+				text-align="center"
+				width="70%"
+				md-width="80%"
+				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+			>
+				Стартовый пакет
 			</Text>
 			<Text
 				as="p"
 				font="--lead"
-				margin="20px 0 0 0"
+				margin="5px 0 0 0"
 				color="#fafafa"
 				text-align="center"
 				width="70%"
+				md-width="80%"
+				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 			>
-				Удаленное создание контента для продукции брендов.
+				6 отредактированных фотографий{" "}
 				<br />
-				Вы экономите на локации и модели, не тратите время на организацию съемки и получаете готовый фото / видео контент для вашего бренда.
+				Промо-видео на 
+25-45 секунд
+
+(версии Instagram + YouTube)
+				<br />
+				Цена от 5600 рублей
+			</Text>
+			<Hr
+				color="#fafafa"
+				height="1px"
+				width="350px"
+				border-width={0}
+				text-align="center"
+				padding="0px 0px 0 0px"
+				margin="16px 285.797px 5px 285.797px"
+			/>
+			<Text
+				as="p"
+				font="normal 400 32px/1.5 --fontFamily-googleRoboto"
+				margin="5px 0 0 0"
+				color="#fafafa"
+				text-align="center"
+				width="70%"
+				md-width="80%"
+				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+			>
+				Стандартный пакет{" "}
+			</Text>
+			<Text
+				as="p"
+				font="--lead"
+				margin="5px 0 0 0"
+				color="#fafafa"
+				text-align="center"
+				width="70%"
+				md-width="80%"
+				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+			>
+				12 отредактированных фотографий
+				<br />
+				Промо-видео на 
+25-45 секунд (версии Instagram + YouTube)
+				<br />
+				Промо ролик Instagram stories (15 cекунд)
+				<br />
+				Цена от 7200 рублей
+			</Text>
+			<Hr
+				color="#fafafa"
+				height="1px"
+				width="350px"
+				border-width={0}
+				text-align="center"
+				padding="0px 0px 0 0px"
+				margin="16px 285.797px 5px 285.797px"
+			/>
+			<Text
+				as="p"
+				font="normal 400 32px/1.5 --fontFamily-googleRoboto"
+				margin="5px 0 0 0"
+				color="#fafafa"
+				text-align="center"
+				width="70%"
+				md-width="80%"
+				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+			>
+				Максимальный пакет{" "}
+			</Text>
+			<Text
+				as="p"
+				font="--lead"
+				margin="5px 0 0 0"
+				color="#fafafa"
+				text-align="center"
+				width="70%"
+				md-width="80%"
+				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+			>
+				18 отредактированных фотографий
+				<br />
+				Промо-видео на 1 минуту (версии Instagram + YouTube)
+				<br />
+				Промо ролик Instagram stories (15 секунд)
+				<br />
+				Цена от 10400 рублей
 			</Text>
 			<Button font="normal 500 20px/1.5 --fontFamily-sans" margin="20px" color="#171717" background="fafafa">
 				Начнем!
@@ -431,152 +552,17 @@ export default (() => {
 				position="relative"
 			>
 				<Image
-					width="24%"
+					width="70%"
 					height="auto"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/23.jpg?v=2020-12-29T20:33:24.785Z"
+					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/2photos.png?v=2020-12-30T23:33:03.687Z"
 					display="inline-block"
 					object-fit="cover"
 					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
 					loading="lazy"
 					vertical-align="top"
-					position="absolute"
-					right="13%"
-					top="auto"
-					bottom="-1495px"
-					left="auto"
-				/>
-				<Image
-					width="24%"
-					height="auto"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA09307.png?v=2020-12-29T20:34:36.375Z"
-					display="inline-block"
-					object-fit="cover"
-					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
-					loading="lazy"
-					vertical-align="top"
-					position="absolute"
-					right="13%"
-					top="auto"
-					bottom="-960px"
-					left="auto"
-				/>
-				<Image
-					width="24%"
-					height="auto"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/333.jpg?v=2020-12-29T21:02:36.217Z"
-					display="inline-block"
-					object-fit="cover"
-					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
-					loading="lazy"
-					vertical-align="top"
-					position="absolute"
-					right="auto"
-					top="0px"
-					left="13%"
-					bottom="-526px"
-				/>
-				<Image
-					width="24%"
-					height="auto"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/122.jpg?v=2020-12-29T21:02:33.574Z"
-					display="inline-block"
-					vertical-align="top"
-					position="absolute"
-					bottom="-320px"
-					left="auto"
-					right="13%"
-					top="0px"
-					object-fit="cover"
-				/>
-				<Image
-					width="24%"
-					height="auto"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/6.jpg?v=2020-12-29T20:33:17.492Z"
-					margin="0 0px 0px 0px"
-					object-fit="cover"
-					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
-					loading="lazy"
-					flex-direction="row"
-					vertical-align="top"
-					display="inline-block"
-					text-align="center"
-					position="absolute"
-					left="13%"
-					right="auto"
-					top="auto"
-					bottom="-1646px"
-				/>
-				<Image
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA09308.png?v=2020-12-29T20:34:41.366Z"
-					object-fit="cover"
-					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
-					loading="lazy"
-					flex-direction="row"
-					vertical-align="top"
-					display="block"
-					text-align="center"
-					position="fixed"
-					right="auto"
-					top="auto"
-					width="24%"
-					height="auto"
-					bottom="1689px"
-					left="13%"
-					z-index="19"
-				/>
-				<Image
-					width="24%"
-					height="523.359px"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/24.jpg?v=2020-12-29T20:33:29.979Z"
-					margin="0 0px 0px 0px"
-					object-fit="cover"
-					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
-					loading="lazy"
-					flex-direction="row"
-					vertical-align="top"
-					display="inline-block"
-					text-align="center"
-					position="absolute"
-					left="38%"
-					right="38%"
-					top="auto"
-					bottom="-1535px"
-				/>
-				<Image
-					width="24%"
-					height="523.359px"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%20%D1%80%D0%BE%D0%BB%D0%B8%D0%BA09319.png?v=2020-12-29T20:34:45.273Z"
-					margin="0 0px 0px 0px"
-					object-fit="cover"
-					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
-					loading="lazy"
-					flex-direction="row"
-					vertical-align="top"
-					display="inline-block"
-					text-align="center"
-					position="absolute"
-					left="38%"
-					right="38%"
-					top="auto"
-					bottom="-1000px"
-				/>
-				<Image
-					width="24%"
-					height="auto"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/4444.jpg?v=2020-12-29T21:02:33.567Z"
-					margin="0 0px 0px 0px"
-					object-fit="cover"
-					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
-					loading="lazy"
-					flex-direction="row"
-					vertical-align="top"
-					display="inline-block"
-					text-align="center"
-					position="absolute"
-					left="38%"
-					right="38%"
-					top="0px"
-					bottom="-352px"
+					position="relative"
+					top={0}
+					bottom={0}
 				/>
 			</Box>
 			<Box />
@@ -588,7 +574,9 @@ export default (() => {
 			position="static"
 			z-index="19"
 			top="-100px"
+			margin="-400px 0 0 0"
 		>
+			<Components.Menus />
 			<Stack>
 				<StackItem width="50%" lg-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -607,6 +595,7 @@ export default (() => {
 						margin="10px 0 0 0"
 						width="100%"
 						color="#fafafa"
+						md-font="normal 600 38px/1 --fontFamily-googleRoboto"
 					>
 						Для{" "}
 						<br />
