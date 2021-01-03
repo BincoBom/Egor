@@ -1,8 +1,8 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Span, Text, Box, Icon, Hr, Button, Image } from "@quarkly/widgets";
+import { Theme, Link, Span, Text, Box, Icon, Strong, Image, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Section, Override, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import { Section, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
 import { MdArrowDownward } from "react-icons/md";
 export default (() => {
@@ -280,7 +280,6 @@ export default (() => {
 							/>
 						</StackItem>
 					</StackItem>
-					<Box padding="0px 0px 50px 0px" />
 				</StackItem>
 			</Stack>
 			<Components.Anchor2 height="1px" opacity="0" />
@@ -419,6 +418,9 @@ export default (() => {
 			top="-200px"
 		>
 			<Override slot="SectionContent" align-self="center" />
+			<Text font="--headline1" color="#fafafa" text-align="center" align-self="center">
+				ТАРИФЫ
+			</Text>
 		</Section>
 		<Section
 			height="150px"
@@ -442,137 +444,139 @@ export default (() => {
 			width="100%"
 		>
 			<Override slot="SectionContent" align-items="center" />
-			<Text
-				as="h1"
-				font="normal 600 40px/1 --fontFamily-googleRoboto"
-				md-font="normal 600 38px/1 --fontFamily-googleRoboto"
-				margin="0px 0 20px 0"
-				text-align="center"
-				align-self="center"
-				color="#fafafa"
-				sm-font="normal 600 20px/1 --fontFamily-googleRoboto"
-			>
-				Тарифы
-			</Text>
-			<Text
-				as="p"
-				font="normal 400 32px/1.5 --fontFamily-googleRoboto"
-				margin="0px 0 0 0"
-				color="#fafafa"
-				text-align="center"
-				width="70%"
-				md-width="80%"
-				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-			>
-				Стартовый пакет
-			</Text>
-			<Text
-				as="p"
-				font="--lead"
-				margin="5px 0 0 0"
-				color="#fafafa"
-				text-align="center"
-				width="70%"
-				md-width="80%"
-				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-			>
-				6 отредактированных фотографий{" "}
-				<br />
-				Промо-видео на 
+			<Stack align-items="center">
+				<StackItem width="33.33%" md-width="100%" position="relative" lg-margin="0px 0px 0 0px">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text
+						as="p"
+						font="normal 400 32px/1.5 --fontFamily-googleRoboto"
+						color="#fafafa"
+						text-align="center"
+						sm-font="normal 500 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					>
+						Стартовый пакет
+					</Text>
+					<Text
+						as="p"
+						font="--lead"
+						color="#fafafa"
+						text-align="center"
+						sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					>
+						6 отредактированных фотографий{" "}
+						<br />
+						Промо-видео на 
 25-45 секунд
-
-(версии Instagram + YouTube)
-				<br />
-				Цена от 5600 рублей
-			</Text>
-			<Hr
-				color="#fafafa"
-				height="1px"
-				width="350px"
-				border-width={0}
-				text-align="center"
-				padding="0px 0px 0 0px"
-				margin="16px 285.797px 5px 285.797px"
-			/>
-			<Text
-				as="p"
-				font="normal 400 32px/1.5 --fontFamily-googleRoboto"
-				margin="5px 0 0 0"
-				color="#fafafa"
-				text-align="center"
-				width="70%"
-				md-width="80%"
-				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-			>
-				Стандартный пакет{" "}
-			</Text>
-			<Text
-				as="p"
-				font="--lead"
-				margin="5px 0 0 0"
-				color="#fafafa"
-				text-align="center"
-				width="70%"
-				md-width="80%"
-				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-			>
-				12 отредактированных фотографий
-				<br />
-				Промо-видео на 
-25-45 секунд (версии Instagram + YouTube)
-				<br />
-				Промо ролик Instagram stories (15 cекунд)
-				<br />
-				Цена от 7200 рублей
-			</Text>
-			<Hr
-				color="#fafafa"
-				height="1px"
-				width="350px"
-				border-width={0}
-				text-align="center"
-				padding="0px 0px 0 0px"
-				margin="16px 285.797px 5px 285.797px"
-			/>
-			<Text
-				as="p"
-				font="normal 400 32px/1.5 --fontFamily-googleRoboto"
-				margin="5px 0 0 0"
-				color="#fafafa"
-				text-align="center"
-				width="70%"
-				md-width="80%"
-				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-			>
-				Максимальный пакет{" "}
-			</Text>
-			<Text
-				as="p"
-				font="--lead"
-				margin="5px 0 0 0"
-				color="#fafafa"
-				text-align="center"
-				width="70%"
-				md-width="80%"
-				sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-			>
-				18 отредактированных фотографий
-				<br />
-				Промо-видео на 1 минуту (версии Instagram + YouTube)
-				<br />
-				Промо ролик Instagram stories (15 секунд)
-				<br />
-				Цена от 10400 рублей
-			</Text>
-			<Button font="normal 500 20px/1.5 --fontFamily-sans" margin="20px" color="#171717" background="fafafa">
-				Начнем!
-			</Button>
+						<br />
+						(версии Instagram + YouTube)
+						<br />
+						<Strong
+							data-q-widget-type="PRIMITIVE"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							Цена от 5600 рублей
+							<br />
+						</Strong>
+					</Text>
+				</StackItem>
+				<StackItem width="33.33%" md-width="100%" position="static">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text
+						as="p"
+						font="normal 400 32px/1.5 --fontFamily-googleRoboto"
+						color="#fafafa"
+						text-align="center"
+						sm-font="normal 500 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					>
+						Стандартный пакет{" "}
+					</Text>
+					<Text
+						as="p"
+						font="--lead"
+						margin="5px 0 0 0"
+						color="#fafafa"
+						text-align="center"
+						sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					>
+						12 отредактированных фотографий
+						<br />
+						Промо-видео на 
+25-45 секунд{" "}
+						<br />
+						(версии Instagram + YouTube)
+						<br />
+						Промо ролик Instagram stories{" "}
+						<br />
+						(15 cекунд)
+						<br />
+						<Strong
+							data-q-widget-type="PRIMITIVE"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							Цена от 7200 рублей
+						</Strong>
+					</Text>
+				</StackItem>
+				<StackItem width="33.33%" md-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text
+						as="p"
+						font="normal 400 32px/1.5 --fontFamily-googleRoboto"
+						color="#fafafa"
+						text-align="center"
+						sm-font="normal 500 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					>
+						Максимальный пакет{" "}
+					</Text>
+					<Text
+						as="p"
+						font="--lead"
+						margin="5px 0 0 0"
+						color="#fafafa"
+						text-align="center"
+						sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					>
+						18 отредактированных фотографий
+						<br />
+						Промо-видео на 1 минуту{" "}
+						<br />
+						(версии Instagram + YouTube)
+						<br />
+						Промо ролик Instagram stories{" "}
+						<br />
+						(15 секунд)
+						<br />
+						<Strong
+							data-q-widget-type="PRIMITIVE"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
+							Цена от 10400 рублей
+						</Strong>
+					</Text>
+				</StackItem>
+			</Stack>
 			<Box
 				width="100%"
 				height="100%"
 				text-align="center"
 				display="inline-block"
 				position="relative"
+				margin="40px 0px 0px 0px"
 			>
 				<Image
 					width="70%"
@@ -601,7 +605,7 @@ export default (() => {
 		>
 			<Components.Anchor3 opacity="0" height="1px" />
 			<Stack>
-				<StackItem width="50%" lg-width="100%">
+				<StackItem width="45%" lg-width="45%" sm-width="100%" margin="0px 0px 0px 40px">
 					<Override slot="StackItemContent" flex-direction="column" />
 					<Text
 						font="--base"
@@ -622,20 +626,50 @@ export default (() => {
 					>
 						Для{" "}
 						<br />
-						идей,
+						идей,{" "}
 						<br />
-						коллабов,
+						коллабов,{" "}
 						<br />
-						предложений
+						предложений{" "}
 						<br />
-						{" "}или просто так
+						или просто так
 					</Text>
 				</StackItem>
-				<StackItem width="50%" lg-width="100%">
-					<Override slot="StackItemContent" border-color="#ffffff" border-width="2px" border-style="solid" />
-					<Text color="#fafafa">
-						форма
-					</Text>
+				<StackItem width="50%" lg-width="45%" sm-width="100%" text-align="center">
+					<Override slot="StackItemContent" display="inline" />
+					<Button
+						width="65%"
+						height="20%"
+						margin="70px 40px 30px 0px"
+						sm-margin="0 40px 30px 0px"
+						sm-height="40%"
+						background="rgba(0, 119, 204, 0)"
+						border-width="2px"
+						border-style="solid"
+						border-color="#fafafa"
+						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
+						color="#fafafa"
+						type="button"
+						href="t.me/VlasovProd"
+						disabled={false}
+					>
+						Написать в Telegram
+					</Button>
+					<Button
+						width="65%"
+						height="20%"
+						margin="0px 40px 0px 0px"
+						sm-height="40%"
+						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
+						background="rgba(0, 119, 204, 0)"
+						border-width="2px"
+						border-style="solid"
+						border-color="#fafafa"
+						color="#fafafa"
+						href="wa.me/79964041915"
+					>
+						Написать в Whatsapp
+					</Button>
 				</StackItem>
 			</Stack>
 		</Section>
@@ -646,25 +680,7 @@ export default (() => {
 			position="static"
 			z-index="19"
 			top="-400px"
-		>
-			<SocialMedia
-				facebook="https://www.facebook.com/quarklyapp/"
-				twitter="https://twitter.com/quarklyapp"
-				youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw"
-				vkontakte="https://vk.com/quarklyapp"
-				telegram="https://t.me/joinchat/DqSYDhS0R9nMRvOtFbIxrQ"
-			>
-				<Override
-					slot="link"
-					border-radius="50%"
-					color="--grey"
-					hover-color="--light"
-					background="transparent"
-					hover-background="transparent"
-					margin="0 8px"
-				/>
-			</SocialMedia>
-		</Section>
+		/>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
