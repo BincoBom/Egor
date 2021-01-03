@@ -650,7 +650,7 @@ export default (() => {
 						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
 						color="#fafafa"
 						type="button"
-						href="t.me/VlasovProd"
+						href="https://t.me/VlasovProd"
 						disabled={false}
 					>
 						Написать в Telegram
@@ -666,7 +666,7 @@ export default (() => {
 						border-style="solid"
 						border-color="#fafafa"
 						color="#fafafa"
-						href="wa.me/79964041915"
+						href="https://wa.me/79964041915"
 					>
 						Написать в Whatsapp
 					</Button>
