@@ -148,7 +148,7 @@ export default (() => {
 			max-height="1080px"
 			max-width="1920px"
 		>
-			<Components.Anchor1 display="none" />
+			<Components.Anchor1 display="block" opacity="0" />
 			<Stack text-align="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -156,7 +156,7 @@ export default (() => {
 						as="h1"
 						font="normal 600 40px/1 --fontFamily-googleRoboto"
 						md-font="normal 600 38px/1 --fontFamily-googleRoboto"
-						margin="20px 0 7px 0"
+						margin="0px 0 7px 0"
 						text-align="center"
 						align-self="center"
 						color="#fafafa"
