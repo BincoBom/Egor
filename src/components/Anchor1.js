@@ -3,7 +3,7 @@ import atomize from "@quarkly/atomize"; // Put your HTML here:
 
 const customHtml = `
 <div>
-<a href="#aboutme">ОБО МНЕ</a> <a href="#projects">ПРОЕКТЫ</a> <a href="#contact">КОНТАКТЫ</a>
+<h3 id="aboutme">якорь</h3>
 
 </div>`;
 

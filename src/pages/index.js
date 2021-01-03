@@ -76,6 +76,7 @@ export default (() => {
 					<Override slot="link-active" color="--primary" />
 					<Override slot="item" padding="6px" md-text-align="right" />
 				</Menu>
+				<Components.Menus />
 			</Box>
 		</Section>
 		<Section
@@ -147,6 +148,7 @@ export default (() => {
 			max-height="1080px"
 			max-width="1920px"
 		>
+			<Components.Anchor1 display="none" />
 			<Stack text-align="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
