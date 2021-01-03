@@ -1,4 +1,3 @@
-export { default as Menus } from "./Menus"
 export { default as Anchor1 } from "./Anchor1"
 export { default as Anchor2 } from "./Anchor2"
 export { default as BrasletiVideo } from "./BrasletiVideo"

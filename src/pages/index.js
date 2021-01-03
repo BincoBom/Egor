@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Span, Text, Box, Icon, Hr, Button, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, Menu, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
+import { Section, Override, StackItem, Stack, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 import { MdArrowDownward } from "react-icons/md";
 export default (() => {
@@ -64,22 +64,39 @@ export default (() => {
 					</Span>
 					PRODUCTION
 				</Text>
-				<Menu
-					display="flex"
-					justify-content="center"
-					font="--base"
-					font-weight="700"
-					sm-width="50%"
-					md-text-align="right"
-				>
-					<Override slot="link" text-decoration="none" color="#fafafa" padding="6px 12px" />
-					<Override slot="link-active" color="--primary" />
-					<Override slot="item" padding="6px" md-text-align="right" />
-				</Menu>
-				<Components.Menus />
-				<Link href="#aboutme">
-					ОБО МНЕ
-				</Link>
+				<Box>
+					<Link
+						href="#aboutme"
+						text-align="right"
+						font="--base"
+						color="#fafafa"
+						text-decoration-line="initial"
+						visited-color="#fafafa"
+						hover-color="#fdb09a"
+					>
+						ОБО МНЕ
+					</Link>
+					<Link
+						href="#projects"
+						text-align="right"
+						color="#fafafa"
+						text-decoration-line="initial"
+						font="--base"
+						padding="0px 15px 0px 15px"
+						hover-color="#fdb09a"
+					>
+						ПРОЕКТЫ
+					</Link>
+					<Link
+						href="#contact"
+						color="#fafafa"
+						font="--base"
+						text-decoration-line="initial"
+						hover-color="#fdb09a"
+					>
+						КОНТАКТЫ
+					</Link>
+				</Box>
 			</Box>
 		</Section>
 		<Section
@@ -125,7 +142,7 @@ export default (() => {
 				</StackItem>
 			</Stack>
 			<Box text-align="center" color="#fafafa" padding="200px 0px 0px 0px">
-				<Components.Anchor1 display="block" opacity="0" />
+				<Components.Anchor1 display="block" opacity="0" height="1px" />
 				<Link
 					href="#"
 					font="--logo"
@@ -266,7 +283,7 @@ export default (() => {
 					<Box padding="0px 0px 50px 0px" />
 				</StackItem>
 			</Stack>
-			<Components.Anchor2 />
+			<Components.Anchor2 height="1px" opacity="0" />
 		</Section>
 		<Section
 			height="30px"
@@ -582,7 +599,7 @@ export default (() => {
 			top="-100px"
 			margin="-400px 0 0 0"
 		>
-			<Components.Anchor3 />
+			<Components.Anchor3 opacity="0" height="1px" />
 			<Stack>
 				<StackItem width="50%" lg-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
