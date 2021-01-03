@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Span, Text, Box, Icon, Strong, Image, Button } from "@quarkly/widgets";
+import { Theme, Link, Span, Text, Box, Icon, Strong, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Section, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
@@ -144,7 +144,7 @@ export default (() => {
 			<Box text-align="center" color="#fafafa" padding="200px 0px 0px 0px">
 				<Components.Anchor1 display="block" opacity="0" height="1px" />
 				<Link
-					href="#"
+					href="#aboutme"
 					font="--logo"
 					color="#fafafa"
 					text-decoration-line="initial"
@@ -591,6 +591,7 @@ export default (() => {
 					top={0}
 					bottom={0}
 				/>
+				<Components.Anchor3 opacity="0" height="1px" />
 			</Box>
 			<Box />
 		</Section>
@@ -603,7 +604,6 @@ export default (() => {
 			top="-100px"
 			margin="-400px 0 0 0"
 		>
-			<Components.Anchor3 opacity="0" height="1px" />
 			<Stack>
 				<StackItem width="45%" lg-width="45%" sm-width="100%" margin="0px 0px 0px 40px">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -635,42 +635,46 @@ export default (() => {
 						или просто так
 					</Text>
 				</StackItem>
-				<StackItem width="50%" lg-width="45%" sm-width="100%" text-align="center">
-					<Override slot="StackItemContent" display="inline" />
-					<Button
-						width="65%"
-						height="20%"
-						margin="70px 40px 30px 0px"
-						sm-margin="0 40px 30px 0px"
-						sm-height="40%"
-						background="rgba(0, 119, 204, 0)"
+				<Box width="50%">
+					<Link
+						href="https://t.me/VlasovProd"
+						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
+						color="#fafafa"
 						border-width="2px"
 						border-style="solid"
 						border-color="#fafafa"
-						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
-						color="#fafafa"
-						type="button"
-						href="https://t.me/VlasovProd"
-						disabled={false}
+						width="55%"
+						height="10%"
+						display="flex"
+						align-items="center"
+						text-align="center"
+						text-decoration-line="initial"
+						padding="8px 24px 8px 24px"
+						justify-content="center"
+						margin="12% 0px 0px 0px"
 					>
 						Написать в Telegram
-					</Button>
-					<Button
-						width="65%"
-						height="20%"
-						margin="0px 40px 0px 0px"
-						sm-height="40%"
+					</Link>
+					<Link
 						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
-						background="rgba(0, 119, 204, 0)"
+						color="#fafafa"
 						border-width="2px"
 						border-style="solid"
 						border-color="#fafafa"
-						color="#fafafa"
+						width="55%"
+						height="10%"
+						display="flex"
+						text-align="center"
+						text-decoration-line="initial"
+						align-items="center"
 						href="https://wa.me/79964041915"
+						padding="8px 24px 8px 24px"
+						justify-content="center"
+						margin="15px 0px 0px 0px"
 					>
 						Написать в Whatsapp
-					</Button>
-				</StackItem>
+					</Link>
+				</Box>
 			</Stack>
 		</Section>
 		<Section
