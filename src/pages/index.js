@@ -77,6 +77,9 @@ export default (() => {
 					<Override slot="item" padding="6px" md-text-align="right" />
 				</Menu>
 				<Components.Menus />
+				<Link href="#aboutme">
+					ОБО МНЕ
+				</Link>
 			</Box>
 		</Section>
 		<Section
@@ -122,6 +125,7 @@ export default (() => {
 				</StackItem>
 			</Stack>
 			<Box text-align="center" color="#fafafa" padding="200px 0px 0px 0px">
+				<Components.Anchor1 display="block" opacity="0" />
 				<Link
 					href="#"
 					font="--logo"
@@ -148,7 +152,6 @@ export default (() => {
 			max-height="1080px"
 			max-width="1920px"
 		>
-			<Components.Anchor1 display="block" opacity="0" />
 			<Stack text-align="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -263,6 +266,7 @@ export default (() => {
 					<Box padding="0px 0px 50px 0px" />
 				</StackItem>
 			</Stack>
+			<Components.Anchor2 />
 		</Section>
 		<Section
 			height="30px"
@@ -578,7 +582,7 @@ export default (() => {
 			top="-100px"
 			margin="-400px 0 0 0"
 		>
-			<Components.Menus />
+			<Components.Anchor3 />
 			<Stack>
 				<StackItem width="50%" lg-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
