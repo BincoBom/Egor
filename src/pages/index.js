@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Span, Box, Text, Icon, Strong, Image } from "@quarkly/widgets";
+import { Theme, Link, Span, Box, Hr, Text, Icon, Strong, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Section, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
@@ -124,6 +124,7 @@ export default (() => {
 			<Stack text-align="center" align-items="center">
 				<StackItem width="100%" lg-width="100%" align-self="center" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" />
+					<Hr height="50px" opacity="0" />
 					<Text
 						as="h1"
 						font="normal 600 370%/1 --fontFamily-googleRoboto"
@@ -163,6 +164,7 @@ export default (() => {
 				</Link>
 				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
 			</Box>
+			<Hr height="60px" opacity="0" />
 		</Section>
 		<Section
 			background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1563030611-25a50eef4f61?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 23%/cover no-repeat"
@@ -178,6 +180,7 @@ export default (() => {
 			max-height="1080px"
 			max-width="1920px"
 		>
+			<Hr height="50px" opacity="0" />
 			<Stack text-align="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -292,6 +295,7 @@ export default (() => {
 				</StackItem>
 			</Stack>
 			<Components.Anchor2 height="1px" opacity="0" />
+			<Hr height="60px" opacity="0" />
 		</Section>
 		<Section
 			height="30px"
