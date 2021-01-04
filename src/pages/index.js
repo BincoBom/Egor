@@ -25,6 +25,7 @@ export default (() => {
 			left="0px"
 			right="0px"
 			z-index="50"
+			sm-height="40px"
 		>
 			<Box
 				display="flex"
@@ -165,7 +166,7 @@ export default (() => {
 					ПОДРОБНЕЕ
 				</Link>
 				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
-				<Components.Anchor1 display="block" opacity="0" height="1px" />
+				<Components.Anchor1 display="block" opacity="0" height="1px" sm-height="0px" />
 			</Box>
 			<Hr height="60px" opacity="0" sm-height={0} sm-display="none" />
 		</Section>
@@ -270,7 +271,13 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						md-display="flex"
 					>
-						<StackItem width="50%" md-width="50%" sm-width="100%">
+						<StackItem
+							width="50%"
+							md-width="50%"
+							sm-width="100%"
+							sm-margin="5px 0px 0px 0px"
+							sm-height="65px"
+						>
 							<Override
 								slot="StackItemContent"
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/sterlic.png?v=2020-11-24T19:42:37.750Z) center/contain no-repeat"
@@ -279,10 +286,11 @@ export default (() => {
 								height="90%"
 								min-height="120px"
 								margin="20px 0px 0px 0px"
-								sm-margin="5px 0px 0px 0px"
+								sm-margin="0 0px 0px 0px"
+								sm-min-height="65px"
 							/>
 						</StackItem>
-						<StackItem width="50%" md-width="50%" sm-width="100%">
+						<StackItem width="50%" md-width="50%" sm-width="100%" sm-height="70px">
 							<Override
 								slot="StackItemContent"
 								background="url(https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/antre.png?v=2020-11-24T19:42:37.752Z) center/contain no-repeat"
@@ -292,6 +300,7 @@ export default (() => {
 								min-height="120px"
 								margin="5px 0px 0px 0px"
 								sm-margin="0 0px 0px 0px"
+								sm-min-height="70px"
 							/>
 						</StackItem>
 					</StackItem>
@@ -301,7 +310,7 @@ export default (() => {
 			<Hr height="100px" opacity="0" sm-display="none" />
 		</Section>
 		<Section
-			height="30px"
+			height="10px"
 			width="100%"
 			background="#fafafa"
 			min-height="10px"
@@ -315,6 +324,7 @@ export default (() => {
 			z-index="14"
 			quarkly-title="подложка"
 			bottom={0}
+			sm-height="70px"
 		>
 			<Override slot="SectionContent" align-self="center" />
 			<Text
@@ -330,11 +340,12 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1533746873999-216ac24b7e5c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 75%/100% fixed border-box"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1533746873999-216ac24b7e5c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 75%/cover"
 			z-index="2"
 			quarkly-title="фон"
 			position="relative"
 			top="-200px"
+			sm-background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.49) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1533746873999-216ac24b7e5c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 75%/cover fixed border-box"
 		/>
 		<Section
 			text-align="center"
@@ -444,6 +455,7 @@ export default (() => {
 			background="rgba(0, 0, 0, 0)"
 			quarkly-title="подложка"
 			top="-200px"
+			sm-height="70px"
 		>
 			<Override slot="SectionContent" align-self="center" />
 			<Text
@@ -459,12 +471,13 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 20%/contain fixed border-box"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1590918203019-8138e4a3aaeb?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000) 20% 80%/cover border-box"
 			position="relative"
 			z-index="2"
 			quarkly-title="фон"
 			top="-400px"
 			padding="23px 0 23px 0"
+			sm-background="rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1502810365585-56ffa361fdde?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000) 50% 50%/cover fixed border-box"
 		/>
 		<Section
 			padding="40px 0 0px 0"
@@ -641,7 +654,7 @@ export default (() => {
 		>
 			<Override slot="SectionContent" sm-margin="0px 0 0px 0" />
 			<Stack>
-				<StackItem width="45%" lg-width="45%" sm-width="100%" margin="0px 0px 0px 40px">
+				<StackItem width="40%" lg-width="45%" sm-width="100%" margin="0px 0px 0px 70px">
 					<Override slot="StackItemContent" flex-direction="column" />
 					<Text
 						font="--base"
