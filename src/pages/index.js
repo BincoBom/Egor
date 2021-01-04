@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { Section, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
 import { MdArrowDownward } from "react-icons/md";
+import { FaInstagram, FaYoutube, FaVk } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -654,14 +655,15 @@ export default (() => {
 			margin="-400px 0 0 0"
 			border-color="#fafafa"
 			lg-padding="64px 0 130px 0"
+			align-items="center"
+			flex-direction="row"
 		>
-			<Override slot="SectionContent" sm-margin="0px 0 0px 0" />
-			<Stack>
+			<Override slot="SectionContent" sm-align-items="center" sm-flex-direction="column" align-items="center" />
+			<Stack sm-align-items="center">
 				<StackItem
-					width="40%"
+					width="50%"
 					lg-width="45%"
 					sm-width="100%"
-					margin="0px 0px 0px 70px"
 					sm-margin="0px 0px 0px 40px"
 					md-margin="0px 0px 0px 10px"
 					md-width="53%"
@@ -678,7 +680,7 @@ export default (() => {
 						Контакты
 					</Text>
 					<Text
-						font="normal 600 50px/1 --fontFamily-googleRoboto"
+						font="normal 600 35px/1 --fontFamily-googleRoboto"
 						max-width="500px"
 						margin="10px 0 0 0"
 						width="100%"
@@ -688,24 +690,20 @@ export default (() => {
 						sm-font="normal 600 30px/1 --fontFamily-googleRoboto"
 						lg-font="normal 600 40px/1 --fontFamily-googleRoboto"
 					>
-						Для идей,{" "}
+						Для сотрудничества, предложений и заказов.{" "}
 						<br />
-						коллабов,
-						<br />
-						предложений{" "}
-						<br />
-						или просто так
+						Заряжаю и заражаю идеями.
 					</Text>
 				</StackItem>
 				<Box
-					width="50%"
+					width="40%"
 					sm-width="100%"
-					sm-text-align="center"
 					sm-display="block"
-					sm-padding="0px 0px 30px 20%"
 					md-width="40%"
 					lg-width="40%"
-					lg-margin="30px 0px 0px 20px"
+					lg-margin="60px 0px 0px 20px"
+					margin="5% 0px 0px 20px"
+					sm-margin="0px 0px 20px 20%"
 				>
 					<Link
 						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
@@ -713,8 +711,7 @@ export default (() => {
 						border-width="2px"
 						border-style="solid"
 						border-color="#171717"
-						width="55%"
-						height="10%"
+						height="15%"
 						display="flex"
 						text-align="center"
 						text-decoration-line="initial"
@@ -722,7 +719,7 @@ export default (() => {
 						href="https://t.me/VlasovProd"
 						padding="8px 24px 8px 24px"
 						justify-content="center"
-						margin="17% 0px 0px 0px"
+						margin="10% 0px 0px 0px"
 						sm-width="70%"
 						sm-height="15%"
 						sm-margin="10% 0px 0px 0px"
@@ -738,8 +735,7 @@ export default (() => {
 						border-width="2px"
 						border-style="solid"
 						border-color="#171717"
-						width="55%"
-						height="10%"
+						height="15%"
 						display="flex"
 						text-align="center"
 						text-decoration-line="initial"
@@ -757,6 +753,30 @@ export default (() => {
 					</Link>
 				</Box>
 			</Stack>
+			<Box
+				display="flex"
+				align-items="center"
+				justify-content="safe center"
+				padding="50px 0px 10px 0px"
+				sm-text-align="center"
+				sm-padding="30px 0px 0 0px"
+			>
+				<Link href="https://instagram.com/vlasov_65">
+					<Icon category="fa" icon={FaInstagram} size="40px" color="#171717" />
+				</Link>
+				<Link href="https://www.youtube.com/c/VLASOVProduction">
+					<Icon
+						category="fa"
+						icon={FaYoutube}
+						size="40px"
+						color="#171717"
+						padding="0px 15px 0px 15px"
+					/>
+				</Link>
+				<Link href="https://vk.com/vlasovproduction">
+					<Icon category="fa" icon={FaVk} size="40px" color="#171717" />
+				</Link>
+			</Box>
 		</Section>
 		<Link
 			font={"--capture"}
