@@ -216,6 +216,7 @@ export default (() => {
 						min-height="120px"
 						md-display="flex"
 						md-align-items="center"
+						sm-margin="0 0px 0px 0px"
 					>
 						<StackItem
 							width="50%"
@@ -323,7 +324,6 @@ export default (() => {
 			position="relative"
 			z-index="14"
 			quarkly-title="подложка"
-			bottom={0}
 			sm-height="70px"
 		>
 			<Override slot="SectionContent" align-self="center" />
@@ -344,8 +344,9 @@ export default (() => {
 			z-index="2"
 			quarkly-title="фон"
 			position="relative"
-			top="-200px"
-			sm-background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.49) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1533746873999-216ac24b7e5c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 75%/cover fixed border-box"
+			sm-background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(0, 0, 0, 0.49) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1533746873999-216ac24b7e5c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 75% border-box"
+			sm-position="relative"
+			bottom="200px"
 		/>
 		<Section
 			text-align="center"
@@ -363,6 +364,7 @@ export default (() => {
 					padding="30px 0px 0px 0px"
 					sm-font="normal 300 17px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					border-color="#171717"
+					sm-padding="0px 0px 0px 0px"
 				>
 					Удаленное создание контента для продукции брендов.
 					<br />
@@ -475,9 +477,9 @@ export default (() => {
 			position="relative"
 			z-index="2"
 			quarkly-title="фон"
-			top="-400px"
 			padding="23px 0 23px 0"
 			sm-background="rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1502810365585-56ffa361fdde?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000) 50% 50%/cover fixed border-box"
+			bottom="400px"
 		/>
 		<Section
 			padding="40px 0 0px 0"
@@ -651,10 +653,19 @@ export default (() => {
 			top="-100px"
 			margin="-400px 0 0 0"
 			border-color="#fafafa"
+			lg-padding="64px 0 130px 0"
 		>
 			<Override slot="SectionContent" sm-margin="0px 0 0px 0" />
 			<Stack>
-				<StackItem width="40%" lg-width="45%" sm-width="100%" margin="0px 0px 0px 70px">
+				<StackItem
+					width="40%"
+					lg-width="45%"
+					sm-width="100%"
+					margin="0px 0px 0px 70px"
+					sm-margin="0px 0px 0px 40px"
+					md-margin="0px 0px 0px 10px"
+					md-width="53%"
+				>
 					<Override slot="StackItemContent" flex-direction="column" />
 					<Text
 						font="--base"
@@ -675,6 +686,7 @@ export default (() => {
 						md-font="normal 600 38px/1 --fontFamily-googleRoboto"
 						sm-text-align="center"
 						sm-font="normal 600 30px/1 --fontFamily-googleRoboto"
+						lg-font="normal 600 40px/1 --fontFamily-googleRoboto"
 					>
 						Для идей,{" "}
 						<br />
@@ -691,6 +703,9 @@ export default (() => {
 					sm-text-align="center"
 					sm-display="block"
 					sm-padding="0px 0px 30px 20%"
+					md-width="40%"
+					lg-width="40%"
+					lg-margin="30px 0px 0px 20px"
 				>
 					<Link
 						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
@@ -711,6 +726,9 @@ export default (() => {
 						sm-width="70%"
 						sm-height="15%"
 						sm-margin="10% 0px 0px 0px"
+						md-width="80%"
+						md-margin="30% 0px 0px 0px"
+						lg-width="70%"
 					>
 						Написать в Telegram
 					</Link>
@@ -732,6 +750,8 @@ export default (() => {
 						margin="15px 0px 0px 0px"
 						sm-width="70%"
 						sm-height="15%"
+						md-width="80%"
+						lg-width="70%"
 					>
 						Написать в Whatsapp
 					</Link>
