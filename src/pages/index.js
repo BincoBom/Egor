@@ -29,11 +29,11 @@ export default (() => {
 			<Box
 				display="flex"
 				padding="12px 0"
-				justify-content="space-between"
 				align-items="center"
-				flex-direction="row"
 				color="#171717"
 				position="inherit"
+				width="100%"
+				justify-content="space-between"
 			>
 				<Link
 					href="#top"
@@ -44,7 +44,7 @@ export default (() => {
 					color="#171717"
 					lg-display="block"
 					md-text-align="left"
-					sm-font="normal small-caps 400 12px/1.3 Roboto, sans-serif"
+					sm-font="normal small-caps 400 11px/1.3 Roboto, sans-serif"
 					sm-text-align="center"
 					text-decoration-line="initial"
 					hover-color="#013615"
@@ -60,7 +60,7 @@ export default (() => {
 						text-overflow="clip"
 						hyphens="manual"
 						data-q-widget-type="PRIMITIVE"
-						sm-font="normal 400 21px Roboto, sans-serif"
+						sm-font="normal 400 20px Roboto, sans-serif"
 						sm-text-align="center"
 					>
 						<Span color="#171717">
@@ -70,7 +70,7 @@ export default (() => {
 					</Span>
 					PRODUCTION
 				</Link>
-				<Box>
+				<Box text-align="right">
 					<Link
 						href="#aboutme"
 						text-align="right"
@@ -80,6 +80,7 @@ export default (() => {
 						visited-color="#171717"
 						hover-color="#013615"
 						active-color="#013615"
+						sm-font="normal 400 12px/1.5 Roboto, sans-serif"
 					>
 						ОБО МНЕ
 					</Link>
@@ -92,6 +93,8 @@ export default (() => {
 						padding="0px 15px 0px 15px"
 						hover-color="#013615"
 						active-color="#013615"
+						sm-font="normal 400 12px/1.5 Roboto, sans-serif"
+						sm-padding="0px 5px 0px 5px"
 					>
 						ПРОЕКТЫ
 					</Link>
@@ -102,6 +105,7 @@ export default (() => {
 						text-decoration-line="initial"
 						hover-color="#013615"
 						active-color="#013615"
+						sm-font="normal 400 12px/1.5 Roboto, sans-serif"
 					>
 						КОНТАКТЫ
 					</Link>
@@ -114,17 +118,16 @@ export default (() => {
 			font="--base"
 			height="100%"
 			min-height="16px"
-			top="0px"
 			max-width="1920px"
 			position="relative"
 			z-index="1"
 			max-height="1080px"
-			bottom="0px"
+			sm-max-height="520px"
 		>
 			<Stack text-align="center" align-items="center">
 				<StackItem width="100%" lg-width="100%" align-self="center" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" />
-					<Hr height="50px" opacity="0" />
+					<Hr height="50px" opacity="0" sm-height={0} sm-display="none" />
 					<Text
 						as="h1"
 						font="normal 600 370%/1 --fontFamily-googleRoboto"
@@ -164,7 +167,7 @@ export default (() => {
 				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
 				<Components.Anchor1 display="block" opacity="0" height="1px" />
 			</Box>
-			<Hr height="60px" opacity="0" />
+			<Hr height="60px" opacity="0" sm-height={0} sm-display="none" />
 		</Section>
 		<Section
 			background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1563030611-25a50eef4f61?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 23%/cover no-repeat"
@@ -174,13 +177,13 @@ export default (() => {
 			font="--base"
 			height="100%"
 			display="flex"
-			position="relative"
 			bottom="0px"
 			z-index="11"
 			max-height="1080px"
 			max-width="1920px"
+			position="relative"
 		>
-			<Hr height="100px" opacity="0" />
+			<Hr height="100px" opacity="0" sm-display="none" />
 			<Stack text-align="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -295,7 +298,7 @@ export default (() => {
 				</StackItem>
 			</Stack>
 			<Components.Anchor2 height="1px" opacity="0" />
-			<Hr height="100px" opacity="0" />
+			<Hr height="100px" opacity="0" sm-display="none" />
 		</Section>
 		<Section
 			height="30px"
@@ -314,7 +317,13 @@ export default (() => {
 			bottom={0}
 		>
 			<Override slot="SectionContent" align-self="center" />
-			<Text font="--headline1" color="#fafafa" text-align="center" align-self="center">
+			<Text
+				font="--headline1"
+				color="#fafafa"
+				text-align="center"
+				align-self="center"
+				sm-font="normal 600 38px/1 Roboto, sans-serif"
+			>
 				МОИ ПРОЕКТЫ
 			</Text>
 		</Section>
@@ -437,7 +446,13 @@ export default (() => {
 			top="-200px"
 		>
 			<Override slot="SectionContent" align-self="center" />
-			<Text font="--headline1" color="#fafafa" text-align="center" align-self="center">
+			<Text
+				font="--headline1"
+				color="#fafafa"
+				text-align="center"
+				align-self="center"
+				sm-font="normal 600 38px/1 Roboto, sans-serif"
+			>
 				ТАРИФЫ
 			</Text>
 		</Section>
@@ -624,6 +639,7 @@ export default (() => {
 			margin="-400px 0 0 0"
 			border-color="#fafafa"
 		>
+			<Override slot="SectionContent" sm-margin="0px 0 0px 0" />
 			<Stack>
 				<StackItem width="45%" lg-width="45%" sm-width="100%" margin="0px 0px 0px 40px">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -633,6 +649,7 @@ export default (() => {
 						letter-spacing="1px"
 						text-transform="uppercase"
 						margin="0"
+						sm-text-align="center"
 					>
 						Контакты
 					</Text>
@@ -643,19 +660,25 @@ export default (() => {
 						width="100%"
 						color="#171717"
 						md-font="normal 600 38px/1 --fontFamily-googleRoboto"
+						sm-text-align="center"
+						sm-font="normal 600 30px/1 --fontFamily-googleRoboto"
 					>
-						Для{" "}
+						Для идей,{" "}
 						<br />
-						идей,{" "}
-						<br />
-						коллабов,{" "}
+						коллабов,
 						<br />
 						предложений{" "}
 						<br />
 						или просто так
 					</Text>
 				</StackItem>
-				<Box width="50%">
+				<Box
+					width="50%"
+					sm-width="100%"
+					sm-text-align="center"
+					sm-display="block"
+					sm-padding="0px 0px 30px 20%"
+				>
 					<Link
 						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
 						color="#171717"
@@ -672,6 +695,9 @@ export default (() => {
 						padding="8px 24px 8px 24px"
 						justify-content="center"
 						margin="17% 0px 0px 0px"
+						sm-width="70%"
+						sm-height="15%"
+						sm-margin="10% 0px 0px 0px"
 					>
 						Написать в Telegram
 					</Link>
@@ -691,6 +717,8 @@ export default (() => {
 						padding="8px 24px 8px 24px"
 						justify-content="center"
 						margin="15px 0px 0px 0px"
+						sm-width="70%"
+						sm-height="15%"
 					>
 						Написать в Whatsapp
 					</Link>
