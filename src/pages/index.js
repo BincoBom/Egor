@@ -617,7 +617,7 @@ export default (() => {
 		<Section
 			background="#fafafa"
 			color="#fafafa"
-			padding="64px 0 64px 0"
+			padding="64px 0 30px 0"
 			position="static"
 			z-index="19"
 			top="-100px"
@@ -697,14 +697,6 @@ export default (() => {
 				</Box>
 			</Stack>
 		</Section>
-		<Section
-			background="#171717"
-			padding="10px 0 10px 0"
-			sm-padding="40px 0"
-			position="static"
-			z-index="19"
-			top="-400px"
-		/>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
