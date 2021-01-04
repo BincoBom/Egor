@@ -592,7 +592,7 @@ export default (() => {
 				<Image
 					width="70%"
 					height="auto"
-					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/2photos.png?v=2020-12-30T23:33:03.687Z"
+					src="https://uploads.quarkly.io/5fbd4fdbb83a2f001f2e3076/images/photos.png?v=2021-01-04T13:29:08.811Z"
 					display="inline-block"
 					object-fit="cover"
 					background="rgba(0, 0, 0, 0) url() 0% 0% /auto repeat scroll padding-box"
