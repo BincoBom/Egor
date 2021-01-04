@@ -47,6 +47,7 @@ export default (() => {
 					sm-font="normal small-caps 400 12px/1.3 Roboto, sans-serif"
 					sm-text-align="center"
 					text-decoration-line="initial"
+					hover-color="#013615"
 				>
 					<Span
 						font="--logo"
@@ -76,8 +77,9 @@ export default (() => {
 						font="--base"
 						color="#171717"
 						text-decoration-line="initial"
-						visited-color="#fafafa"
-						hover-color="#fdb09a"
+						visited-color="#171717"
+						hover-color="#013615"
+						active-color="#013615"
 					>
 						ОБО МНЕ
 					</Link>
@@ -88,7 +90,8 @@ export default (() => {
 						text-decoration-line="initial"
 						font="--base"
 						padding="0px 15px 0px 15px"
-						hover-color="#fdb09a"
+						hover-color="#013615"
+						active-color="#013615"
 					>
 						ПРОЕКТЫ
 					</Link>
@@ -97,7 +100,8 @@ export default (() => {
 						color="#171717"
 						font="--base"
 						text-decoration-line="initial"
-						hover-color="#fdb09a"
+						hover-color="#013615"
+						active-color="#013615"
 					>
 						КОНТАКТЫ
 					</Link>
@@ -313,7 +317,7 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1602526429747-ac387a91d43b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 75%/100% fixed border-box"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1533746873999-216ac24b7e5c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 75%/100% fixed border-box"
 			z-index="2"
 			quarkly-title="фон"
 			position="relative"
