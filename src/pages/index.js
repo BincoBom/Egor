@@ -152,7 +152,6 @@ export default (() => {
 				</StackItem>
 			</Stack>
 			<Box text-align="center" color="#fafafa" padding="200px 0px 0px 0px">
-				<Components.Anchor1 display="block" opacity="0" height="1px" />
 				<Link
 					href="#aboutme"
 					font="--logo"
@@ -162,6 +161,7 @@ export default (() => {
 				>
 					ПОДРОБНЕЕ
 				</Link>
+				<Components.Anchor1 display="block" opacity="0" height="1px" />
 				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
 			</Box>
 			<Hr height="60px" opacity="0" />
@@ -180,7 +180,7 @@ export default (() => {
 			max-height="1080px"
 			max-width="1920px"
 		>
-			<Hr height="50px" opacity="0" />
+			<Hr height="90px" opacity="0" />
 			<Stack text-align="center">
 				<StackItem width="100%" lg-width="100%" align-self="center">
 					<Override slot="StackItemContent" flex-direction="column" />
@@ -295,7 +295,7 @@ export default (() => {
 				</StackItem>
 			</Stack>
 			<Components.Anchor2 height="1px" opacity="0" />
-			<Hr height="60px" opacity="0" />
+			<Hr height="90px" opacity="0" />
 		</Section>
 		<Section
 			height="30px"
