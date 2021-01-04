@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Span, Text, Box, Icon, Strong, Image } from "@quarkly/widgets";
+import { Theme, Link, Span, Box, Text, Icon, Strong, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Section, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
@@ -14,8 +14,9 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
+		<Components.Anchor0 height="0px" opacity="0" />
 		<Section
-			background="#171717"
+			background="#fafafa"
 			min-height="16px"
 			padding="15px 0 15px 0"
 			position="fixed"
@@ -31,19 +32,21 @@ export default (() => {
 				justify-content="space-between"
 				align-items="center"
 				flex-direction="row"
-				color="#fafafa"
+				color="#171717"
 				position="inherit"
 			>
-				<Text
+				<Link
+					href="#top"
 					margin="0"
 					md-margin="0px 0 0px 0"
 					text-align="center"
 					font="--logo2"
-					color="#fafafa"
+					color="#171717"
 					lg-display="block"
 					md-text-align="left"
 					sm-font="normal small-caps 400 12px/1.3 Roboto, sans-serif"
 					sm-text-align="center"
+					text-decoration-line="initial"
 				>
 					<Span
 						font="--logo"
@@ -59,17 +62,19 @@ export default (() => {
 						sm-font="normal 400 21px Roboto, sans-serif"
 						sm-text-align="center"
 					>
-						VLASOV
+						<Span color="#171717">
+							VLASOV
+						</Span>
 						<br />
 					</Span>
 					PRODUCTION
-				</Text>
+				</Link>
 				<Box>
 					<Link
 						href="#aboutme"
 						text-align="right"
 						font="--base"
-						color="#fafafa"
+						color="#171717"
 						text-decoration-line="initial"
 						visited-color="#fafafa"
 						hover-color="#fdb09a"
@@ -79,7 +84,7 @@ export default (() => {
 					<Link
 						href="#projects"
 						text-align="right"
-						color="#fafafa"
+						color="#171717"
 						text-decoration-line="initial"
 						font="--base"
 						padding="0px 15px 0px 15px"
@@ -89,7 +94,7 @@ export default (() => {
 					</Link>
 					<Link
 						href="#contact"
-						color="#fafafa"
+						color="#171717"
 						font="--base"
 						text-decoration-line="initial"
 						hover-color="#fdb09a"
@@ -100,7 +105,7 @@ export default (() => {
 			</Box>
 		</Section>
 		<Section
-			background="linear-gradient(0deg,rgba(4, 8, 12, 0) 0%,rgba(4, 8, 12, 0.18) 0%),--color-darkL2 url(https://images.unsplash.com/photo-1541322114925-104973c4cdd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1460&q=80) 50% 0%/cover no-repeat"
+			background="linear-gradient(0deg,rgba(4, 8, 12, 0) 0%,rgba(4, 8, 12, 0.18) 0%),--color-darkL2 url(https://images.unsplash.com/photo-1609611336379-479e268780c6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 0%/cover no-repeat"
 			color="--light"
 			font="--base"
 			height="100%"
@@ -156,7 +161,7 @@ export default (() => {
 			</Box>
 		</Section>
 		<Section
-			background="linear-gradient(0deg,rgba(4, 8, 12, 0.37) 0%,rgba(0, 0, 0, 0.6) 21%),--color-darkL2 url(https://images.unsplash.com/photo-1535652316575-b38ecbf16de3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 20% 50%/cover no-repeat"
+			background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1563030611-25a50eef4f61?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 23%/cover no-repeat"
 			padding="64px 0"
 			sm-padding="40px 0"
 			color="--light"
@@ -287,7 +292,7 @@ export default (() => {
 		<Section
 			height="30px"
 			width="100%"
-			background="#171717"
+			background="#fafafa"
 			min-height="10px"
 			position="relative"
 			z-index="13"
@@ -318,13 +323,19 @@ export default (() => {
 			text-align="center"
 			sm-padding="40px 0"
 			position="relative"
-			background="#171717"
+			background="#fafafa"
 			padding="0px 0 24px 0"
 			z-index="15"
 			top="-200px"
 		>
 			<Box>
-				<Text font="--lead" color="#fafafa" padding="30px 0px 0px 0px" sm-font="normal 300 17px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif">
+				<Text
+					font="--lead"
+					color="#171717"
+					padding="30px 0px 0px 0px"
+					sm-font="normal 300 17px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					border-color="#171717"
+				>
 					Удаленное создание контента для продукции брендов.
 					<br />
 					Вы экономите на локации и модели, не тратите время на организацию съемки и получаете{" "}
@@ -425,7 +436,7 @@ export default (() => {
 		<Section
 			height="150px"
 			width="100%"
-			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1546443046-ed1ce6ffd1ab?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 50%/contain fixed border-box"
+			background="linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 0%),rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) 50% 20%/contain fixed border-box"
 			position="relative"
 			z-index="2"
 			quarkly-title="фон"
@@ -436,7 +447,7 @@ export default (() => {
 			padding="40px 0 0px 0"
 			sm-padding="40px 0"
 			position="relative"
-			background="#171717"
+			background="#fafafa"
 			z-index="18"
 			top="-400px"
 			bottom="0px"
@@ -450,7 +461,7 @@ export default (() => {
 					<Text
 						as="p"
 						font="normal 400 32px/1.5 --fontFamily-googleRoboto"
-						color="#fafafa"
+						color="#171717"
 						text-align="center"
 						sm-font="normal 500 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					>
@@ -459,7 +470,7 @@ export default (() => {
 					<Text
 						as="p"
 						font="--lead"
-						color="#fafafa"
+						color="#171717"
 						text-align="center"
 						sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					>
@@ -489,7 +500,7 @@ export default (() => {
 					<Text
 						as="p"
 						font="normal 400 32px/1.5 --fontFamily-googleRoboto"
-						color="#fafafa"
+						color="#171717"
 						text-align="center"
 						sm-font="normal 500 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					>
@@ -499,7 +510,7 @@ export default (() => {
 						as="p"
 						font="--lead"
 						margin="5px 0 0 0"
-						color="#fafafa"
+						color="#171717"
 						text-align="center"
 						sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					>
@@ -532,7 +543,7 @@ export default (() => {
 					<Text
 						as="p"
 						font="normal 400 32px/1.5 --fontFamily-googleRoboto"
-						color="#fafafa"
+						color="#171717"
 						text-align="center"
 						sm-font="normal 500 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					>
@@ -542,7 +553,7 @@ export default (() => {
 						as="p"
 						font="--lead"
 						margin="5px 0 0 0"
-						color="#fafafa"
+						color="#171717"
 						text-align="center"
 						sm-font="normal 300 18px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 					>
@@ -596,13 +607,14 @@ export default (() => {
 			<Box />
 		</Section>
 		<Section
-			background="#171717"
-			color="--dark"
+			background="#fafafa"
+			color="#fafafa"
 			padding="64px 0 64px 0"
 			position="static"
 			z-index="19"
 			top="-100px"
 			margin="-400px 0 0 0"
+			border-color="#fafafa"
 		>
 			<Stack>
 				<StackItem width="45%" lg-width="45%" sm-width="100%" margin="0px 0px 0px 40px">
@@ -621,7 +633,7 @@ export default (() => {
 						max-width="500px"
 						margin="10px 0 0 0"
 						width="100%"
-						color="#fafafa"
+						color="#171717"
 						md-font="normal 600 38px/1 --fontFamily-googleRoboto"
 					>
 						Для{" "}
@@ -637,30 +649,30 @@ export default (() => {
 				</StackItem>
 				<Box width="50%">
 					<Link
-						href="https://t.me/VlasovProd"
 						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
-						color="#fafafa"
+						color="#171717"
 						border-width="2px"
 						border-style="solid"
-						border-color="#fafafa"
+						border-color="#171717"
 						width="55%"
 						height="10%"
 						display="flex"
-						align-items="center"
 						text-align="center"
 						text-decoration-line="initial"
+						align-items="center"
+						href="https://t.me/VlasovProd"
 						padding="8px 24px 8px 24px"
 						justify-content="center"
-						margin="12% 0px 0px 0px"
+						margin="17% 0px 0px 0px"
 					>
 						Написать в Telegram
 					</Link>
 					<Link
 						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
-						color="#fafafa"
+						color="#171717"
 						border-width="2px"
 						border-style="solid"
-						border-color="#fafafa"
+						border-color="#171717"
 						width="55%"
 						height="10%"
 						display="flex"
