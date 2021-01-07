@@ -658,15 +658,16 @@ export default (() => {
 			align-items="center"
 			flex-direction="row"
 		>
-			<Override slot="SectionContent" sm-align-items="center" sm-flex-direction="column" align-items="center" />
-			<Stack sm-align-items="center">
+			<Override slot="SectionContent" align-items="center" />
+			<Stack sm-align-items="center" sm-margin="0px 0px 0px 0px">
 				<StackItem
 					width="50%"
-					lg-width="45%"
+					lg-width="60%"
 					sm-width="100%"
-					sm-margin="0px 0px 0px 40px"
+					sm-margin="0px 0px 0px 0px"
 					md-margin="0px 0px 0px 10px"
 					md-width="53%"
+					lg-margin="0px 0px 0px 30px"
 				>
 					<Override slot="StackItemContent" flex-direction="column" />
 					<Text
@@ -687,7 +688,7 @@ export default (() => {
 						color="#171717"
 						md-font="normal 600 38px/1 --fontFamily-googleRoboto"
 						sm-text-align="center"
-						sm-font="normal 600 30px/1 --fontFamily-googleRoboto"
+						sm-font="normal 600 25px/1 --fontFamily-googleRoboto"
 						lg-font="normal 600 40px/1 --fontFamily-googleRoboto"
 					>
 						Для сотрудничества, предложений и заказов.{" "}
@@ -700,10 +701,11 @@ export default (() => {
 					sm-width="100%"
 					sm-display="block"
 					md-width="40%"
-					lg-width="40%"
+					lg-width="33%"
 					lg-margin="60px 0px 0px 20px"
 					margin="5% 0px 0px 20px"
-					sm-margin="0px 0px 20px 20%"
+					sm-margin="0px 0px 20px 0px"
+					md-margin="10px 0px 0px 20px"
 				>
 					<Link
 						font="normal 500 18px/1.5 --fontFamily-googleRoboto"
@@ -722,10 +724,11 @@ export default (() => {
 						margin="10% 0px 0px 0px"
 						sm-width="70%"
 						sm-height="15%"
-						sm-margin="10% 0px 0px 0px"
 						md-width="80%"
 						md-margin="30% 0px 0px 0px"
 						lg-width="70%"
+						sm-text-align="center"
+						sm-margin="5% 0px 0px 8%"
 					>
 						Написать в Telegram
 					</Link>
@@ -748,6 +751,7 @@ export default (() => {
 						sm-height="15%"
 						md-width="80%"
 						lg-width="70%"
+						sm-margin="15px 0px 0px 8%"
 					>
 						Написать в Whatsapp
 					</Link>
